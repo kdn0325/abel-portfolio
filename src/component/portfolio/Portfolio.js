@@ -3,8 +3,8 @@ import Detail from "../Detail/Detail"
 const Portfolio = () => {
     const data = {
         name: "Portfolio",
-        pageUrl: "https://kdn0325.github.io/StarbucksKR/",
-        github: "https://github.com/kdn0325/StarbucksKR",
+        pageUrl: "https://portfolio-abel.netlify.app",
+        github: "https://github.com/kdn0325/abel-portfolio",
         screenshot: [
             require("../../Assets/img/portfolio/screenshot1.png"),
             require("../../Assets/img/portfolio/screenshot2.png"),
