@@ -1,0 +1,23 @@
+.transition-group {
+    position: relative;
+  }
+  /* 애니메이션 시작 */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  /* 애니메이션 시작 동작 */
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity .5s;
+  }
+  /* 애니메이션 종료 */
+  .fade-exit {
+    opacity: 1;
+
+  }
+  /* 애니메이션 종료 동작 */
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+  }

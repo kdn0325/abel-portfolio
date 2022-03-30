@@ -1,0 +1,91 @@
+@use "../../Style/" as *;
+
+.intro{
+    width: 100%;
+    background: $white;
+    background-color:$container-bg;
+    border:$container-border;
+    max-width: $container-width;
+    margin: 10rem auto 0;
+    padding: 7rem 3rem 4rem;
+    border-radius: $container-border-radius;
+
+    h2.title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    h3{
+        @include flex(flex-start,flex-start);
+        font-size:2rem;
+        .smile{
+            font-size: 2.2rem;
+            margin-right: .3rem;
+        }
+    }
+
+    article{
+        margin: 4rem 0;
+    }
+    
+        .profile{
+            padding: 1.5rem 2.5rem;
+            @include flex(center,space-between);
+
+            &_img{
+                width: 50%;
+                height: 50%;
+                margin-right: 5rem;
+            }
+        
+            .detail{
+                display: flex;
+                
+                    .desc{
+                        li{
+                            display: flex;
+                            font-size: 1.5rem;
+                            padding: .5rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+        }
+        .int{
+            padding: 1.5rem 2.5rem;
+            line-height: 200%;
+
+            &_box{
+                margin-bottom: 2rem;
+                padding: 1.5rem 2.5rem;
+            }
+            &_tit{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            &_txt{
+                font-size: 1.2rem;
+                margin: .5rem;
+            }
+        }
+        .skill{
+            padding: 1.5rem 2.5rem;
+            @include flex(center,space-between);
+
+            .skill_box{
+                @include flex(center,center);
+                flex-direction: column;
+
+                h4{
+                    margin-top: .5rem;
+                    font-size: .8rem;
+                }
+                .skillIco{
+                    display: block;
+                    width: 4rem;
+                    width: 4rem;
+                    text-align: center;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }

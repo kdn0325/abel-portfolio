@@ -1,0 +1,106 @@
+@use "../../Style/" as *;
+
+.project{
+    width: 100%;
+    background-color:hsla(0, 0%, 98%, 0.3);
+    border:$container-border;
+    max-width: $container-width;
+    margin: 10rem auto 0;
+    padding: 7rem 3rem 4rem;
+    border-radius: $container-border-radius;
+
+    h2.title{
+        font-size: 2.5rem;
+        text-align: center;
+        color: $white;
+    }
+    div.projectContainer{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        
+
+        article{
+            width: 80%;
+            height: 60%;
+            @include grid(center,center);
+            box-shadow: 0 0 1.5rem #000;
+            transition: .5s box-shadow;
+            position: relative;
+            
+            &:hover{
+                box-shadow: 0 0 3rem $white;
+            }
+
+            .Thumnail{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .7;
+                    
+                img{
+                    height: 100%;
+                }
+            }
+            
+            .link{
+                transition: opacity .3s;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 1fr 2fr 1fr;
+                position: relative;
+
+                .clickToDetail{
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    transform: translate(50%, -50%);
+                    transition: opacity .5s;
+                    font-size: 1.8rem;
+                    color: $white;
+                }
+                
+            }
+            &>span, h3, p, ul{
+                transition: opacity .5s;
+            }
+            &:hover{
+                .clickToDetail{opacity: 1;}
+                &>span,h3,p,ul{opacity: .02;}
+            }
+            h3{
+                @include flex(center,center);
+                margin-top: 3rem;
+                font-size: 2rem;
+                color: $white;
+            }
+            p.desc{
+                @extend %flex-right;
+                padding-right: 2rem;
+                font-size: 1rem;
+                color: $white
+            }
+
+            ul.item{
+                @include flex(center,flex-end);
+                font-size: .5rem;
+                li{
+                    @include flex(center,center);
+                    flex-direction: column;
+                    padding: 2rem 1rem;
+
+                    span{
+                        font-size: 2rem;
+                    }
+                    h4{
+                        color: $white;
+                    }
+                }
+            }
+        
+        }
+    }
+}

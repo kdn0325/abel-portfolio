@@ -1,0 +1,49 @@
+@use "../../Style/" as *;
+
+.transition-enter{
+    opacity: 0;
+}
+.transition-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.my-node-exit {
+    opacity: 1;
+}
+   
+.home{
+    width: 100%;
+    height: 100vh;
+    @include flex(center,center);
+    position: relative;
+    flex-wrap: wrap;
+
+    &_greeting{
+        width: 100%;
+        font-weight: 300;
+        color: $white;
+        font-size: 2.5rem;
+        text-align: center;
+        strong{
+            color:$main-color
+        }
+    }
+    .view{
+        position: absolute;
+        bottom: 2.5rem;
+        color: $black;
+        @include flex(center,center);
+        flex-direction: column;
+
+        .down{
+            font-size: 1.2rem;
+        }
+        transition: opacity 1s;
+        animation: scrollDown 4s infinite ease-in-out;
+        @keyframes scrollDown {
+            0%{opacity: 0; transform: translateY(-.5rem);}
+            50%{opacity: 1;}
+            100%{opacity: 0; transform: translateY(.5rem);}
+        }
+    }
+}

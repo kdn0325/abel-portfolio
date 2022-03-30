@@ -1,0 +1,16 @@
+@mixin flex ($aligin-item, $justify-content){
+    display: flex;
+    align-items: $aligin-item;
+    justify-content: $justify-content;
+}
+
+@mixin grid($aligin-self,$justify-self) {
+    align-self: $aligin-self;
+    justify-self: $justify-self;
+}
+
+%flex-right{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
