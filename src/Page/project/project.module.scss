@@ -5,8 +5,8 @@
     background-color:hsla(0, 0%, 98%, 0.3);
     border:$main-border;
     max-width: $main-width;
-    margin: 10rem auto 0;
-    padding: 7rem 3rem 4rem;
+    margin: $main-margin;
+    padding: $main-padding;
     border-radius: $main-border-radius;
     @include mobile{
         width: $mobile-width;

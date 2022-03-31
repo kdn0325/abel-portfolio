@@ -6,8 +6,8 @@
     background-color:$main-bg;
     border:$main-border;
     max-width: $main-width;
-    margin: 10rem auto 0;
-    padding: 7rem 3rem 4rem;
+    margin: $main-margin;
+    padding: $main-padding;
     border-radius: $main-border-radius;
 
     @include mobile{
@@ -32,7 +32,7 @@
     }
     
         .profile{
-            padding: 1.5rem 2.5rem;
+            padding: $container-padding;
             @include flex(center,space-between);
 
             &_img{
@@ -61,12 +61,12 @@
                 }
         }
         .int{
-            padding: 1.5rem 2.5rem;
+            padding: $container-padding;
             line-height: 200%;
 
             &_box{
                 margin-bottom: 2rem;
-                padding: 1.5rem 2.5rem;
+                padding: $container-padding;
                 @include mobile{
                     padding: 0;
                 }
@@ -87,7 +87,7 @@
             }
         }
         .skill{
-            padding: 1.5rem 2.5rem;
+            padding: $container-padding;
             @include flex(center,space-between);
             @include mobile{
                 flex-wrap:wrap;
