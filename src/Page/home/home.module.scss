@@ -31,11 +31,11 @@
     .view{
         position: absolute;
         bottom: 2.5rem;
-        color: $black;
+        color: $white;
         @include flex(center,center);
         flex-direction: column;
 
-        .down{
+        .tab{
             font-size: 1.2rem;
         }
         transition: opacity 1s;

@@ -10,7 +10,7 @@ const Project = () => {
             <div className={styles.projectContainer}>
                 <article className={styles.ktalpha}>
                         <div className={styles.Thumnail}>
-                            <img src={require(`../../Assets/img/ktalpha/screenshot1.png`)} alt="kt-alpha"/>
+                            <img alt="KT_ALPHA" src="https://user-images.githubusercontent.com/91298955/148898550-8ef0c715-1edf-4d7e-8aba-23d1db8e3a2a.png"/>
                         </div>
                         <Link className={styles.link} to="/project/kt-alpha">
                             <div className={styles.clickToDetail}>Click to Detail</div>
@@ -26,7 +26,7 @@ const Project = () => {
                 </article>
                 <article className={styles.suwonhealth}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/suwonhealth/screenshot1.png`)} alt="suwonhealth"/>
+                        <img alt="suwonpublichealth" src="https://user-images.githubusercontent.com/91298955/148897654-05885afa-fd2b-4aa8-9f99-0a901bc7253a.png"/>
                     </div>
                     <Link className={styles.link} to="suwonhealth">
                         <div className={styles.clickToDetail}>Click to Detail</div>
@@ -42,7 +42,7 @@ const Project = () => {
                 </article>
                 <article className={styles.starbucks}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/starbucks/screenshot1.png`)} alt="starbucks"/>
+                        <img alt="STARBUCKS" src="https://user-images.githubusercontent.com/91298955/148896831-d5585f8f-ff9f-49fc-9b96-599bb9fc38da.png"/>
                     </div>                    
                     <Link className={styles.link} to="starbucks">
                         <div className={styles.clickToDetail}>Click to Detail</div>
@@ -58,7 +58,7 @@ const Project = () => {
                 </article>
                 <article className={styles.prevportfolio}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/prevportfolio/screenshot1.png`)} alt="prevportfolio"/>
+                        <img alt="prevportfolio" src="https://user-images.githubusercontent.com/91298955/148900465-8f2e4fe3-3131-41fa-a2c6-ee7cfae3ce08.png"/>
                     </div>  
                     <Link className={styles.link} to="prevportfolio">
                         <div className={styles.clickToDetail}>Click to Detail</div>
@@ -73,7 +73,7 @@ const Project = () => {
                 </article>
                 <article className={styles.covid19}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/covid19/screenshot1.png`)} alt="covid19"/>
+                        <img alt="covid19" src="https://user-images.githubusercontent.com/91298955/148898928-5727cb4d-aec8-4162-8a29-8a838c9cee3f.png"/>
                     </div>  
                     <Link className={styles.link} to="covid19">
                         <div className={styles.clickToDetail}>Click to Detail</div>
@@ -86,7 +86,7 @@ const Project = () => {
                 </article>
                 <article className={styles.watching}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/watching/screenshot1.png`)} alt="watching"/>
+                        <img alt="watching" src="https://user-images.githubusercontent.com/91298955/157289751-6a999366-0615-4e3c-83b0-7a6587ac4b93.png"/>
                     </div>  
                     <Link className={styles.link} to="watching">
                         <div className={styles.clickToDetail}>Click to Detail</div>
@@ -100,7 +100,7 @@ const Project = () => {
                 </article>
                 <article className={styles.blog}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/blog/screenshot1.png`)} alt="blog"/>
+                        <img alt="blog" src="https://user-images.githubusercontent.com/91298955/159221721-8e1dc698-7f63-4654-87d5-8801a9a370ab.png"/>
                     </div>  
                     <Link className={styles.link} to="blog">
                         <div className={styles.clickToDetail}>Click to Detail</div>

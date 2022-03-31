@@ -12,7 +12,7 @@ const Header = () => {
         <div className={`${isScrolled ? `${styles.header} ${styles.scrollheader}` : styles.header}`}>
             <div className={styles.header_wrap}>
                 <h1 className={styles.logo}>
-                    <a href="/"><img style={{width:"50%"}} src={require(`../../Assets/img/portfolio/abel_title.png`)} alt="logo"/></a>
+                    <a href="/"><img src={require(`../../Assets/img/portfolio/abel_title.png`)} alt="logo"/></a>
                 </h1>
                 <ul className={styles.menu}>
                     <li className={styles.menu_list}>

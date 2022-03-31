@@ -3,15 +3,19 @@
 .intro{
     width: 100%;
     background: $white;
-    background-color:$container-bg;
-    border:$container-border;
-    max-width: $container-width;
+    background-color:$main-bg;
+    border:$main-border;
+    max-width: $main-width;
     margin: 10rem auto 0;
     padding: 7rem 3rem 4rem;
-    border-radius: $container-border-radius;
+    border-radius: $main-border-radius;
+
+    @include mobile{
+        max-width: $mobile-width;
+    }
 
     h2.title{
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
     }
     h3{
@@ -32,9 +36,11 @@
             @include flex(center,space-between);
 
             &_img{
-                width: 50%;
-                height: 50%;
                 margin-right: 5rem;
+                
+                @include mobile{
+                    display: none;
+                }
             }
         
             .detail{
@@ -46,6 +52,10 @@
                             font-size: 1.5rem;
                             padding: .5rem;
                             margin-bottom: 1rem;
+
+                            @include mobile{
+                                margin-bottom: .5rem;
+                            }
                         }
                     }
                 }
@@ -57,19 +67,36 @@
             &_box{
                 margin-bottom: 2rem;
                 padding: 1.5rem 2.5rem;
+                @include mobile{
+                    padding: 0;
+                }
             }
             &_tit{
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
+                @include mobile{
+                    margin-bottom: 3rem;
+                }
             }
             &_txt{
                 font-size: 1.2rem;
                 margin: .5rem;
+                @include mobile{
+                    margin: 1rem;
+                }
             }
         }
         .skill{
             padding: 1.5rem 2.5rem;
             @include flex(center,space-between);
+            @include mobile{
+                flex-wrap:wrap;
+            }
+
+            @include mobile{
+                padding: 0;
+                margin:5rem 0;
+            }
 
             .skill_box{
                 @include flex(center,center);
@@ -81,7 +108,6 @@
                 }
                 .skillIco{
                     display: block;
-                    width: 4rem;
                     width: 4rem;
                     text-align: center;
                     font-size: 4rem;

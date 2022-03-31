@@ -3,33 +3,34 @@
 .contact{
     width: 100%;
     background: $white;
-    background-color:$container-bg;
-    border:$container-border;
-    max-width: $container-width;
+    background-color:$main-bg;
+    border:$main-border;
+    max-width: $main-width;
     margin: 10rem auto 0;
     padding: 7rem 3rem 4rem;
-    border-radius: $container-border-radius;
+    border-radius: $main-border-radius;
+    @include mobile{
+        width: $mobile-width;
+    }
 
     h2.title{
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
     }
-    h3{
-        margin: 4rem 0;
-        font-size:2rem;
-        @include flex(flex-start,flex-start);
-    }
     .articleContact{
-        padding: 1.5rem 2.5rem;
+        padding: $container-padding;
         font-size: 2.5rem;
         margin: 4rem 0;
 
 
         ul{
-            padding: 1.5rem 2.5rem;
+            padding: $container-padding;
+            @include mobile{
+                padding: 0;
+            }
+
 
             li{
-                // display: flex;
                 @include flex(center,flex-start);
                 font-size: 1.5rem;
                 margin-bottom: 1rem;

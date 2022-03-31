@@ -14,12 +14,18 @@
 
     &_wrap{
         @include flex(center,space-between);
-        max-width:$container-width;
+        max-width:$main-width;
         margin: 0 auto;
         height: 100%;
 
         h1.logo{
             text-align: center;
+            img{
+                width: 50%;
+                @include mobile{
+                    width: 30%;
+                }
+            }
         }
     }
 
@@ -27,15 +33,16 @@
     
     .menu{
         
-        max-width: $container-width;
-        // margin: 0 auto;
+        max-width: $main-width;
         @include flex(center,space-between);
         &_list{
             margin: 0 2rem;
             .link{
                 font-size: 1.5rem;
                 color: $main-color;
-                
+                @include mobile{
+                    font-size: 1rem;
+                }
             }
         }
     }
