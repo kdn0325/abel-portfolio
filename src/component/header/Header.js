@@ -18,7 +18,7 @@ const Header = () => {
         return()=>{
             window.removeEventListener("scroll",shrinkHeader);
         }
-    },[])
+    },[headerRef])
     const menu = [
         {title : "Home" , path : "/"},
         {title : "Intro" , path : "/intro"},
