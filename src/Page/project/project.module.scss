@@ -8,9 +8,6 @@
     margin: $main-margin;
     padding: $main-padding;
     border-radius: $main-border-radius;
-    @include mobile{
-        width: $mobile-width;
-    }
 
     h2.title{
         font-size: 3rem;
