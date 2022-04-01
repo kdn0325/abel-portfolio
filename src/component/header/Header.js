@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss"
 
