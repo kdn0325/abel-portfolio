@@ -5,7 +5,6 @@ import styles from "./header.module.scss"
 
 const Header = () => {
     const headerRef = useRef(null);
-
     useEffect(()=>{
         const shrinkHeader = () =>{
             if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
