@@ -1,4 +1,4 @@
-import {Routes, Route, useLocation} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Home from "./Page/home/Home";
 import Intro from './Page/intro/Intro';
 import Project from './Page/project/Project';
@@ -16,14 +16,14 @@ import Portfolio from './component/portfolio/Portfolio';
 import { useEffect } from "react";
 
 const PageRoutes = () => {
-    const location = useLocation();
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[location])
+    // const location = useLocation();
+    // useEffect(()=>{
+    //     window.scrollTo(0,0)
+    // },[location])
     return (
         <TransitionGroup>
-            <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={500}>
-                <Routes location={location}>
+            <CSSTransition in={false} classNames="fade" timeout={500}>
+                <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/intro" element={<Intro/>}/>
                     <Route path="/project/*" element={<Project/>}/>
