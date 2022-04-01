@@ -16,7 +16,7 @@
         @include flex(center,space-between);
         max-width:$main-width;
         margin: 0 auto;
-        
+
         h1.logo{
             text-align: center;
             img{
@@ -28,13 +28,14 @@
         }
     }
     .menu{
-        max-width: $main-width;
         @include flex(center,space-between);
         &_list{
             margin: 0 2rem;
+
             .link{
                 font-size: 1.5rem;
                 color: $main-color;
+
                 @include mobile{
                     font-size: 1rem;
                 }
