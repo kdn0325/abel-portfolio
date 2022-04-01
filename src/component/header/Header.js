@@ -7,10 +7,10 @@ const Header = () => {
     const headerRef = useRef(null);
     useEffect(()=>{
         const shrinkHeader = () =>{
-            if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-                headerRef.current.classList.add(`${styles.scrollheader}`)
+            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                headerRef.current.classList.add(`${styles.shrink}`)
             }else{
-                headerRef.current.classList.remove(`${styles.scrollheader}`)
+                headerRef.current.classList.remove(`${styles.shrink}`)
             }
         }
         window.addEventListener("scroll",shrinkHeader);
@@ -22,7 +22,7 @@ const Header = () => {
         <div className={styles.header} ref={headerRef}>
             <div className={styles.header_wrap}>
                 <h1 className={styles.logo}>
-                    <a href="/"><img src={require(`../../Assets/img/portfolio/abel_title.png`)} alt="logo"/></a>
+                    <Link to="/"><img src={require(`../../Assets/img/portfolio/abel_title.png`)} alt="logo"/></Link>
                 </h1>
                 <ul className={styles.menu}>
                     <li className={styles.menu_list}>

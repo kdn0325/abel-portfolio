@@ -8,7 +8,7 @@
     z-index: 99;
     box-shadow: 0 1px 3px rgb(90 90 90 / 12%), 0 1px 2px rgb(90 90 90 / 24%);
 
-    &.scrollheader{
+    &.shrink{
         background-color: $white;
     }
 
@@ -23,27 +23,23 @@
             img{
                 width: 50%;
                 @include mobile{
-                    display: none;
+                    width: 30%;
                 }
             }
         }
     }
     .menu{
         max-width: $main-width;
-        height: 5rem;
         @include flex(center,space-between);
-
         &_list{
             margin: 0 2rem;
             .link{
                 font-size: 1.5rem;
                 color: $main-color;
-             }
-        }
-        @include mobile{
-            position: fixed;
-            width: 100%;
-            @include flex(center,space-between)
+                @include mobile{
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }
