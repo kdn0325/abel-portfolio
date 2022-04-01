@@ -10,7 +10,7 @@ const Intro = () => {
             <h2 className={styles.title}>Introduction</h2>
             <article className={styles.profile}>
                 <div className={styles.profile_img}>
-                    <img alt="profile" arc="https://user-images.githubusercontent.com/91298955/161248630-def8d50e-1348-416c-8edd-f27dfd1856f1.jpg"/>
+                    <img alt="profile" src="https://user-images.githubusercontent.com/91298955/161258299-ecbaf570-7347-46a3-99c2-57e057466d82.png"/>
                 </div>
                 <div className={styles.detail}>
                     <ul className={styles.desc}>
