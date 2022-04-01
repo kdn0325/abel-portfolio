@@ -18,25 +18,30 @@ const Header = () => {
             window.removeEventListener("scroll",shrinkHeader);
         }
     },[])
+    const menu = [
+        {title : "Home" , path : "/"},
+        {title : "Intro" , path : "/intro"},
+        {title : "Project" , path : "/project"},
+        {title : "Contact" , path : "/contact"},
+    ]
     return(
         <div className={styles.header} ref={headerRef}>
             <div className={styles.header_wrap}>
                 <h1 className={styles.logo}>
-                    <Link to="/"><img src={require(`../../Assets/img/portfolio/abel_title.png`)} alt="logo"/></Link>
+                    <Link to="/"><img alt="abel_title" src="https://user-images.githubusercontent.com/91298955/161248419-bc807d7e-f379-4f2e-95c4-d31f71cb4727.png"/></Link>
                 </h1>
                 <ul className={styles.menu}>
-                    <li className={styles.menu_list}>
-                        <Link to="/" className={styles.link} >Home</Link>
-                    </li>
-                    <li className={styles.menu_list}>
-                        <Link to="/intro" className={styles.link}>Intro</Link>
-                    </li>
-                    <li className={styles.menu_list}>
-                        <Link to="/project" className={styles.link}>Project</Link>
-                    </li>
-                    <li className={styles.menu_list}>
-                        <Link to="/contact" className={styles.link}>Contact</Link>
-                    </li>
+                    {
+                        menu.map((menu,idx)=>
+                            <li key ={menu.title + idx} className={styles.menu_list}>
+                                <Link to={menu.path}>
+                                    <a className={styles.link} href={menu.path}>
+                                        {menu.title}
+                                    </a>
+                                </Link>
+                            </li>
+                        )
+                    }
                 </ul>
             </div>
         </div>

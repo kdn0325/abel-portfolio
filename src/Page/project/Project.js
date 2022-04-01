@@ -116,7 +116,7 @@ const Project = () => {
                 </article>
                 <article className={styles.portfolio}>
                     <div className={styles.Thumnail}>
-                        <img src={require(`../../Assets/img/portfolio/screenshot1.png`)} alt="portfolio"/>
+                        <img alt="portfolio" src="https://user-images.githubusercontent.com/91298955/161248827-9b397fe0-0f58-4fb8-b9f1-e303d511521d.png"/>
                     </div>  
                     <Link className={styles.link} to="portfolio">
                         <div className={styles.clickToDetail}>Click to Detail</div>
