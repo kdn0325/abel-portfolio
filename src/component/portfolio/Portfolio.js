@@ -8,7 +8,7 @@ const Portfolio = () => {
         screenshot: [
             require("../../Assets/img/portfolio/screenshot1.png"),
             require("../../Assets/img/portfolio/screenshot2.png"),
-            require("../../Assets/img/portfolio/screenshot2.png"),
+            require("../../Assets/img/portfolio/screenshot3.png"),
         ],
         logo: require("../../Assets/img/portfolio/abel_title.png"),
         skills: [

@@ -10,6 +10,10 @@
     padding: $main-padding;
     border-radius: $main-border-radius;
 
+    @include mobile{
+        max-width: $mobile-width;
+    }
+
     h2.title{
         font-size: 3rem;
         text-align: center;
@@ -61,6 +65,7 @@
             line-height: 200%;
 
             &_box{
+               
                 margin-bottom: 2rem;
                 padding: $container-padding;
                 @include mobile{
@@ -75,6 +80,7 @@
                 }
             }
             &_txt{
+                @include flex(center,flex-start);
                 font-size: 1.2rem;
                 margin: .5rem;
                 @include mobile{

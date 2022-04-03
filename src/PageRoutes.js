@@ -22,7 +22,7 @@ const PageRoutes = () => {
     },[location])
     return (
         <TransitionGroup>
-            <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={500}>
+            <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={800}>
                 <Routes location={location}>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/intro" element={<Intro/>}/>

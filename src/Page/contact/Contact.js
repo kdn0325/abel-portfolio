@@ -7,8 +7,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import LinkIcon from '@mui/icons-material/Link';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { useRef } from "react";
 
 const Contact = () => {
+    const copyref = useRef("")
     const copy = (text) =>{
         if(!document.queryCommandSupported("copy")){
             return alert("복사가 지원되지 않습니다")
@@ -16,11 +18,11 @@ const Contact = () => {
         const textarea = document.createElement("textarea")
         textarea.value = text;
         document.body.appendChild(textarea)
-        textarea.focus()
         textarea.select()
         document.execCommand("copy")
         document.body.removeChild(textarea);
         alert("클립보드가 복사되었습니다")
+        copyref.current.focus()
     }
     return (
         <section className={styles.contact}>
@@ -29,9 +31,21 @@ const Contact = () => {
                 <ul>
                     <li><AccountBoxIcon className={styles.contactIco}/>Dong-Nyeong-Kim</li>
                     <li><LocationOnIcon className={styles.contactIco}/>Suwon-si Gyeonggi-do, Korea</li>
-                    <li><PhoneIphoneIcon className={styles.contactIco}/>010-5520-3071<button onClick={()=>copy("01055203071")}><ContentCopyIcon className={styles.ico}/></button></li>
-                    <li><EmailIcon className={styles.contactIco}/>sexy-ehdsud@nate.com<button onClick={()=>copy("sexy-ehdsud@nate.com")}><ContentCopyIcon className={styles.ico}/></button></li>
-                    <li><GitHubIcon className={styles.contactIco}/>Github<a href="https://github.com/kdn0325" target="_blank" rel="noreferrer"><LinkIcon className={styles.ico}/></a></li>
+                    <li><PhoneIphoneIcon className={styles.contactIco}/>010-5520-3071
+                        <button onClick={()=>copy("01055203071")}><ContentCopyIcon className={styles.ico}/></button>
+                    </li>
+                    <li><EmailIcon className={styles.contactIco}/>
+                        <a href ="mailto:sexy-ehdsud@nate.com">sexy-ehdsud@nate.com</a>
+                        <button onClick={()=>copy("sexy-ehdsud@nate.com")} ref={copyref}>
+                            <ContentCopyIcon className={styles.ico}/>
+                        </button>
+                    </li>
+                    <li><GitHubIcon className={styles.contactIco}/>
+                        <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer">Github</a>
+                        <button onClick={()=>copy("https://github.com/kdn0325")}>
+                            <LinkIcon className={styles.ico}/>
+                        </button>
+                    </li>
                 </ul>
             </article>
             <article className={styles.articleContact}>
