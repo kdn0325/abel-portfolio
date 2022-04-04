@@ -9,7 +9,7 @@
   /* 애니메이션 시작 동작 */
   .fade-enter-active {
     opacity: 1;
-    transition: opacity .8s;
+    transition: opacity .5s;
   }
   /* 애니메이션 종료 */
   .fade-exit {
@@ -18,5 +18,5 @@
   /* 애니메이션 종료 동작 */
   .fade-exit-active {
     opacity: 0;
-    transition: opacity .8s ease-in;
+    transition: opacity .5s ease-in;
   }

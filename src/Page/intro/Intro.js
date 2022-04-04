@@ -1,12 +1,12 @@
 import styles from "./intro.module.scss"
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { SiReact,SiRedux, SiJavascript,SiSass, SiNodedotjs, SiHtml5, SiCss3, SiJquery, SiStyledcomponents,
-SiExpress, SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiFigma,SiGithub} from 'react-icons/si'
+SiExpress, SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiFigma,SiGithub} from 'react-icons/si';
 import { GiZeppelin } from "react-icons/gi";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Intro = () => {
-    const skill = [
+    const skillDesc = [
     {
         title: "HTML5", 
         txt1: "시맨틱 태그를 적절한 쓰임새에 맞게 사용하며 웹표준을 준수한 시멘틱 마크업을 작성합니다." ,
@@ -20,7 +20,7 @@ const Intro = () => {
     {
         title: "Javascript", 
         txt1: "자바스크립트 ES6 문법을 이해하고 활용할 수 있습니다." ,
-        txt2: "절차지향/객체지향 함수, 메소드, 클래스, 프로토타입 등 다양하게 활용합니다. 그리고 let, const, Arrow 활용 가능합니다.",
+        txt2: "절차지향/객체지향 함수, 메소드, 클래스, 프로토타입 등 다양하게 활용합니다.",
     },
     {
         title: "Jquery", 
@@ -43,7 +43,84 @@ const Intro = () => {
         txt2: "협업을 위한 업무 프로세스를 준수하며 지식을 배우고 공유하고자 합니다.",
     },
     ]
-    
+    const skillBox = [
+        {
+            title: "HTML5",
+            skillIco: <SiHtml5 color="#ff5723"/>,
+            
+        },
+        {
+            title: "CSS3",
+            skillIco: <SiCss3 color="#007bc9"/>,
+            
+        },
+        {
+            title: "Javascript",
+            skillIco: <SiJavascript color="#f7e018"/>,
+            
+        },
+        {
+            title: "Jquery",
+            skillIco: <SiJquery color="#2e68a8"/>,
+            
+        },
+        {
+            title: "React",
+            skillIco: <SiReact color="#61dafb"/>,
+            
+        },
+        {
+            title: "SCSS",
+            skillIco: <SiSass color="#fe9ae4"/>,
+            
+        },
+        {
+            title: "Styled-components",
+            skillIco: <SiStyledcomponents color="#fe9ae4"/>,
+            
+        },
+    ]
+    const SkillExp = [
+        {
+            title: "Node.js",
+            skillIco: <SiNodedotjs color="#8bc500"/>,
+        },
+        {
+            title: "Express",
+            skillIco: <SiExpress color="#007bc9"/>,
+        },
+        {
+            title: "MongoDB",
+            skillIco: <SiMongodb color="#13aa52"/>,
+        },
+        {
+            title: "Redux",
+            skillIco: <SiRedux color="#764abc"/>,
+        }
+    ]
+
+    const tool = [
+        {
+            title: "Github",
+            skillIco: <SiGithub color="#000"/>,
+        },
+        {
+            title: "Figma",
+            skillIco: <SiFigma color="#000"/>,
+        },
+        {
+            title: "Photoshop",
+            skillIco: <SiAdobephotoshop color="#002036"/>,
+        },
+        {
+            title: "Illustrator",
+            skillIco: <SiAdobeillustrator color="330000"/>,
+        },
+        {
+            title: "Zeplin",
+            skillIco: <GiZeppelin color="fbbc38"/>,
+        },
+    ]
     return (
         <section className={styles.intro}>
             <h2 className={styles.title}>Introduction</h2>
@@ -65,8 +142,8 @@ const Intro = () => {
             <h3><EmojiEmotionsIcon className={styles.smile}/>MIND</h3>
             <article className={styles.int}>
                 {
-                    skill.map(skillInt=>
-                        <dl className={styles.int_box}>
+                    skillDesc.map((skillInt,idx)=>
+                        <dl className={styles.int_box} key={idx}>
                             <dt className={styles.int_tit}>{skillInt.title}</dt>
                             <dd className={styles.int_txt}><CheckCircleIcon style={{marginRight:"5px"}}/>{skillInt.txt1}</dd>
                             <dd className={styles.int_txt}><CheckCircleIcon style={{marginRight:"5px"}}/>{skillInt.txt2}</dd>
@@ -76,76 +153,36 @@ const Intro = () => {
             </article>
             <h3><EmojiEmotionsIcon className={styles.smile}/>Skill</h3>
             <article className={styles.skill}>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiHtml5 color="#ff5723"/></span>
-                    <h4>HTML5</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiCss3 color="#007bc9"/></span>
-                    <h4>CSS3</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiJavascript color="#f7e018"/></span>
-                    <h4>Javascript</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiJquery color="#2e68a8"/></span>
-                    <h4>JQuery</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiReact color="#61dafb"/></span>
-                    <h4>React</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiSass color="#fe9ae4"/></span>
-                    <h4>SCSS</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiStyledcomponents color="#fe9ae4"/></span>
-                    <h4>Styled-components</h4> 
-                </div>
+                {
+                    skillBox.map((skill,idx)=>
+                            <div className={styles.skill_box} key={idx}>
+                                <span className={styles.skillIco}>{skill.skillIco}</span>
+                                <h4>{skill.title}</h4>
+                            </div>
+                        )
+                }
             </article>
             <h3><EmojiEmotionsIcon className={styles.smile}/>Skill Experience</h3>
             <article className={styles.skill}>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiNodedotjs color="#8bc500"/></span>
-                    <h4>Node.js</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiExpress color="#007bc9"/></span>
-                    <h4>Express</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiMongodb color="#13aa52"/></span>
-                    <h4>MongoDB</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiRedux color="#764abc"/></span>
-                    <h4>Redux</h4> 
-                </div>
+                {
+                    SkillExp.map((skill,idx)=>
+                            <div className={styles.skill_box} key={idx}>
+                                <span className={styles.skillIco}>{skill.skillIco}</span>
+                                <h4>{skill.title}</h4>
+                            </div>
+                        )
+                }
             </article>
             <h3><EmojiEmotionsIcon className={styles.smile}/>Tool</h3>
             <article className={styles.skill}>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiGithub color="#000"/></span>
-                    <h4>Github</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiFigma color="#000"/></span>
-                    <h4>Figma</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiAdobephotoshop color="#002036"/></span>
-                    <h4>Photoshop</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><SiAdobeillustrator color="330000"/></span>
-                    <h4>Illustrator</h4> 
-                </div>
-                <div className={styles.skill_box}>
-                    <span className={styles.skillIco}><GiZeppelin color="fbbc38"/></span>
-                    <h4>Zeplin</h4> 
-                </div>
+                {
+                    tool.map((skill,idx)=>
+                            <div className={styles.skill_box} key={idx}>
+                                <span className={styles.skillIco}>{skill.skillIco}</span>
+                                <h4>{skill.title}</h4>
+                            </div>
+                        )
+                }
             </article>
         </section>
     );
