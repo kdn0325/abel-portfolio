@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link} from "react-router-dom";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-import styles from "./detail.module.scss";
 
 const Container = styled.section`
     position: absolute;
@@ -31,7 +30,7 @@ const Left = styled.div`
         to{opacity: 1; ; transform: translateX(0)}
     }
     @media screen and (min-width:23rem) and (max-width:37rem){
-        width:40%;
+        width:100%;
     }
     .goBack{
         position: absolute;
@@ -73,6 +72,9 @@ const Screenshot = styled.div`
         &.screen3{z-index: 1; top: 65%; left: 55%; transform: translateX(-50%);}
         
         @media screen and (min-width:23rem) and (max-width:37rem){
+            width:80%;
+        }
+        @media screen and (min-width:38rem) and (max-width:50rem){
             width:100%;
         }
     }
@@ -128,13 +130,7 @@ const Right = styled.div`
         to{opacity: 1; ; transform: translateX(0)}
     }
     @media screen and (min-width:23rem) and (max-width:37rem){
-        width:50%;
-        display:flex;
-        flex-direction:column;
-        padding:1rem;
-    }
-    @media screen and (max-width:25rem){
-        height: inherit;
+        display:none;
     }
 `;
 
@@ -142,10 +138,6 @@ const Logo = styled.img`
     align-self: center;
     padding-left: 2rem;
     display: flex;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:80%;
-        padding:0;
-    }
 `;
 
 const Skills = styled.div`
@@ -154,22 +146,10 @@ const Skills = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:100%;
-        margin:2rem 0;
-    }
-    
-
 `;
 
 const SkillList = styled.ul`
     display: flex;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        display:flex;
-        width:100%;
-        justify-content:space-between;
-    }
-
 `;
 
 const Skill = styled.li`
@@ -181,9 +161,6 @@ const Skill = styled.li`
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .7;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        margin-right:0;
-    }
 `;
 
 const Desc = styled.ul`
@@ -198,12 +175,6 @@ const Desc = styled.ul`
     display: flex;
     flex-direction: column;
     align-content: center;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:100%;
-        padding: 1rem 2rem;
-        margin:0;
-        font-size:0.1rem;
-    }
     li{
         font-size: .8rem;
         padding: .5rem 0;
@@ -215,10 +186,6 @@ const Challenges = styled.div`
     grid-row: 3/5;
     padding: 0 2rem;
     font-size: .9rem;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:100%;
-        padding:1rem 1rem;
-    }
     h5{
         font-size: 1rem;
         margin-bottom: 1.2rem;
@@ -250,11 +217,6 @@ const Period = styled.p`
     padding: 0 2rem;
     font-size: 1rem;
     font-weight: 500;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:100%;
-        padding:1rem 1rem;
-        font-size:1.2rem;
-    }
 `;
 
 const Browsers = styled.div`
@@ -262,17 +224,10 @@ const Browsers = styled.div`
     grid-row: 3/4;
     padding: 0 2rem;
     font-size: .9rem;
-    @media screen and (min-width:23rem) and (max-width:37rem){
-        width:100%;
-        padding:1rem 1rem;
-    }
     h5{
         margin-bottom: 1.2rem;
         font-size: 1rem;
         font-weight: 500;
-        @media screen and (min-width:23rem) and (max-width:37rem){
-            font-size:1.5rem;
-        }
     }
     
 `;
