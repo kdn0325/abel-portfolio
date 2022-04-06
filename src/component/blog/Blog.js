@@ -6,16 +6,16 @@ const Blog = () => {
         pageUrl: "https://kdn0325.github.io/StarbucksKR/",
         github: "https://kdn-blog.herokuapp.com/",
         screenshot: [
-            require("../../Assets/img/blog/screenshot1.png"),
-            require("../../Assets/img/blog/screenshot2.png"),
-            require("../../Assets/img/blog/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161950067-71c5cd95-46f8-425f-95e9-107b4847e0f9.png",
+            "https://user-images.githubusercontent.com/91298955/161950062-17c04c2e-46f2-429f-a368-ff318a95e8f5.png",
+            "https://user-images.githubusercontent.com/91298955/161950080-fc8e7df1-6276-4cbf-82a1-b8b50863abb7.png",
         ],
-        logo: require("../../Assets/img/blog/abel_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161950398-cdd64398-5f2c-49f9-958a-4e1cfee28418.png",
         skills: [
-            {name: "react", url: require("../../Assets/img/skill/react.png")},
-            {name: "node.js", url: require("../../Assets/img/skill/nodejs.png")},
-            {name: "node-express", url: require("../../Assets/img/skill/node_express.png")},
-            {name: "mongoDB", url: require("../../Assets/img/skill/mongoDB.png")}
+            {name: "React", url: require("../../Assets/img/skill/react.png")},
+            {name: "Node.js", url: require("../../Assets/img/skill/nodejs.png")},
+            {name: "Express", url: require("../../Assets/img/skill/node_express.png")},
+            {name: "MongoDB", url: require("../../Assets/img/skill/mongoDB.png")}
         ],
         description : [
             "MongoDB와 Node.js로 Javascript만을 사용하여 어떻게 서버를 만드는지 학습하면서 만든 블로그 웹사이트입니다.", 

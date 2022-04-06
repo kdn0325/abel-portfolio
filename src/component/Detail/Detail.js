@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link} from "react-router-dom";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-
+    
 const Container = styled.section`
     position: absolute;
     top: 0;
@@ -138,6 +138,10 @@ const Logo = styled.img`
     align-self: center;
     padding-left: 2rem;
     display: flex;
+    width:50%;
+    @media screen and (min-width:38rem) and (max-width:50rem){
+        width:70%;
+    }
 `;
 
 const Skills = styled.div`

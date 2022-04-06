@@ -6,11 +6,11 @@ const KtAlpha = () => {
         pageUrl: "https://kdn0325.github.io/KT-alpha/",
         github: "https://github.com/kdn0325/KT-alpha",
         screenshot: [
-            require("../../Assets/img/ktalpha/screenshot1.png"),
-            require("../../Assets/img/ktalpha/screenshot2.png"),
-            require("../../Assets/img/ktalpha/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161949228-255993f9-d15b-4a64-8d14-901df8aee29e.png",
+            "https://user-images.githubusercontent.com/91298955/161949266-f92dd97f-08f6-4ec8-bba3-5eb935d4a5aa.png",
+            "https://user-images.githubusercontent.com/91298955/161949256-c64f26f0-a337-4720-ac54-a48b2f2ecedd.png",
         ],
-        logo: require("../../Assets/img/ktalpha/ktalpha_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161949222-c7a4f85d-9efe-4bc1-b2b2-b2153c829fde.png",
         skills: [
             {name: "html", url: require("../../Assets/img/skill/html.png")},
             {name: "css", url: require("../../Assets/img/skill/css.png")},

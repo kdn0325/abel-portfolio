@@ -5,6 +5,7 @@ import Project from './Page/project/Project';
 import Contact from './Page/contact/Contact';
 import { TransitionGroup,CSSTransition } from 'react-transition-group';
 import "./pageroutes.css"
+import { useEffect } from "react";
 import Starbucks from './component/starbucks/Starbucks';
 import KtAlpha from './component/kt-alpha/KtAlpha';
 import SuwonHealth from './component/suwonhealth/SuwonHealth';
@@ -13,7 +14,6 @@ import Covid19 from './component/covid19/Covid19';
 import Watching from './component/watching/Watching';
 import Blog from './component/blog/Blog';
 import Portfolio from './component/portfolio/Portfolio';
-import { useEffect } from "react";
 
 const PageRoutes = () => {
     const location = useLocation();
@@ -26,9 +26,8 @@ const PageRoutes = () => {
                 <Routes location={location}>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/intro" element={<Intro/>}/>
-                    <Route path="/project/*" element={<Project/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                    <Route path="/project/kt-alpha" element={<KtAlpha/>}/>
+                    <Route path="/project/*"element={<Project/>}/>
+                    <Route path="/project/kt-alpha"  element={<KtAlpha/>}/>
                     <Route path="/project/suwonhealth" element={<SuwonHealth/>}/>
                     <Route path="/project/starbucks" element={<Starbucks/>}/>
                     <Route path="/project/prevportfolio" element={<PrevPortfolio/>}/>
@@ -36,6 +35,7 @@ const PageRoutes = () => {
                     <Route path="/project/watching" element={<Watching/>}/>
                     <Route path="/project/blog" element={<Blog/>}/>
                     <Route path="/project/portfolio" element={<Portfolio/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
                 </Routes>
             </CSSTransition>
         </TransitionGroup>

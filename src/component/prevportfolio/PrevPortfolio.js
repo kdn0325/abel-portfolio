@@ -6,15 +6,15 @@ const PrevPortfolio = () => {
         pageUrl: "https://kdn0325.github.io/portfolio/",
         github: "https://github.com/kdn0325/portfolio",
         screenshot: [
-            require("../../Assets/img/prevportfolio/screenshot1.png"),
-            require("../../Assets/img/prevportfolio/screenshot2.png"),
-            require("../../Assets/img/prevportfolio/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161951416-cd10f2fc-6eeb-4174-8a55-2bddf6fbbc55.png",
+            "https://user-images.githubusercontent.com/91298955/161951412-60fea31e-fb5a-44f7-b0a2-94b9f4501c8e.png",
+            "https://user-images.githubusercontent.com/91298955/161951425-31c2b8f8-8896-4245-80cd-e6a48905bd46.png",
         ],
-        logo: require("../../Assets/img/prevportfolio/abel_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161951407-6650fbe2",
         skills: [
-            {name: "html", url: require("../../Assets/img/skill/html.png")},
-            {name: "css", url: require("../../Assets/img/skill/css.png")},
-            {name: "js", url: require("../../Assets/img/skill/js.png")},
+            {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
+            {name: "CSS", url: require("../../Assets/img/skill/css.png")},
+            {name: "Javascript", url: require("../../Assets/img/skill/js.png")},
         ],
         description : [
             "포트폴리오를 제작하면서 절차지향/객체지향을 이해하고 활용하며 함수, 메소드, 클래스, 프로토타입 등을 이해하고 UI 제작에 활용하였습니다", 

@@ -12,7 +12,7 @@ const Project = () => {
                         <div className={styles.Thumnail}>
                             <img alt="KT_ALPHA" src="https://user-images.githubusercontent.com/91298955/148898550-8ef0c715-1edf-4d7e-8aba-23d1db8e3a2a.png"/>
                         </div>
-                        <Link className={styles.link} to="/project/kt-alpha">
+                        <Link className={styles.link} to="kt-alpha">
                             <div className={styles.clickToDetail}>Click to Detail</div>
                             <h3>KT-ALPHA</h3>
                             <p className={styles.desc}>"KT-Alpha Adaptive Web"</p>

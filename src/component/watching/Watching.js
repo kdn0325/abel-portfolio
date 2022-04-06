@@ -6,15 +6,15 @@ const Watching = () => {
         pageUrl: "https://abelwatching.netlify.app/",
         github: "https://github.com/kdn0325/watching-app",
         screenshot: [
-            require("../../Assets/img/watching/screenshot1.png"),
-            require("../../Assets/img/watching/screenshot2.png"),
-            require("../../Assets/img/watching/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161952365-5ed9f953-dea1-433e-8a65-ef3ac3024c1e.png",
+            "https://user-images.githubusercontent.com/91298955/161952369-fe5a3d45-34e8-453b-a247-5a35cc4cd62a.png",
+            "https://user-images.githubusercontent.com/91298955/161952385-984eee45-1947-4053-9f46-3e90721033b3.png",
         ],
-        logo: require("../../Assets/img/watching/watching_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161952534-73914ea9-410c-41e8-b9fd-83af47ef8de3.png",
         skills: [
-            {name: "html", url: require("../../Assets/img/skill/html.png")},
-            {name: "scss", url: require("../../Assets/img/skill/sass.png")},
-            {name: "react", url: require("../../Assets/img/skill/react.png")},
+            {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
+            {name: "SCSS", url: require("../../Assets/img/skill/sass.png")},
+            {name: "React", url: require("../../Assets/img/skill/react.png")},
         ],
         description : [
             "React를 사용한 첫 프로젝트이며 , TMDB API를 활용한 영화 정보 서비스입니다",

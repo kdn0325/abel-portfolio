@@ -6,11 +6,11 @@ const Starbucks = () => {
         pageUrl: "https://kdn0325.github.io/StarbucksKR/",
         github: "https://github.com/kdn0325/StarbucksKR",
         screenshot: [
-            require("../../Assets/img/starbucks/screenshot1.png"),
-            require("../../Assets/img/starbucks/screenshot2.png"),
-            require("../../Assets/img/starbucks/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161951698-20ada237-70d6-4d49-87f8-937343ee3547.png",
+            "https://user-images.githubusercontent.com/91298955/161951705-b5d18f81-5169-4c78-b759-19ccfe761d90.png",
+            "https://user-images.githubusercontent.com/91298955/161951710-fce14009-eccc-4916-8e92-11da0a8aa2e4.png",
         ],
-        logo: require("../../Assets/img/starbucks/starbucks_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161951907-454b0677-672b-41c1-a9ec-5a9fedefbb87.png",
         skills: [
             {name: "html", url: require("../../Assets/img/skill/html.png")},
             {name: "css", url: require("../../Assets/img/skill/css.png")},

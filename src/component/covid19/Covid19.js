@@ -6,13 +6,13 @@ const Covid19 = () => {
         pageUrl: "https://github.com/kdn0325/covid19-app",
         github: "https://kdn0325.github.io/covid19-app/",
         screenshot: [
-            require("../../Assets/img/covid19/screenshot1.png"),
-            require("../../Assets/img/covid19/screenshot2.png"),
-            require("../../Assets/img/covid19/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161950401-93b3f7a8-cdb5-40db-ab45-a54689ebc213.png",
+            "https://user-images.githubusercontent.com/91298955/161950418-750796a1-a94d-412e-8636-2c9d87a1dfb5.png",
+            "https://user-images.githubusercontent.com/91298955/161950408-b3700151-7003-439b-8585-229d509b79be.png",
         ],
-        logo:require("../../Assets/img/covid19/covid19_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161950398-cdd64398-5f2c-49f9-958a-4e1cfee28418.png",
         skills: [
-            {name: "html", url: require("../../Assets/img/skill/react.png")},
+            {name: "React", url: require("../../Assets/img/skill/react.png")},
         ],
         description : [
             "인터렉티브한 웹사이트를 표현할 수 있는 패럴랙스 스크롤링과 이미지 슬라이드 구현을 위한 JQuery 애니메이션을 학습하며 제작한 반응형 스타벅스 코리아 클론 데스크톱 웹사이트입니다.", 

@@ -6,16 +6,16 @@ const Portfolio = () => {
         pageUrl: "https://portfolio-abel.netlify.app",
         github: "https://github.com/kdn0325/abel-portfolio",
         screenshot: [
-            require("../../Assets/img/portfolio/screenshot1.png"),
-            require("../../Assets/img/portfolio/screenshot2.png"),
-            require("../../Assets/img/portfolio/screenshot3.png"),
+            "https://user-images.githubusercontent.com/91298955/161950835-9dc3aeb8-520b-4f48-b450-4f70e29a20f8.png",
+            "https://user-images.githubusercontent.com/91298955/161950842-3da13993-bd74-48c1-8b4d-114af1954878.png",
+            "https://user-images.githubusercontent.com/91298955/161950848-37836dbb-be5a-4fcd-9509-a3dc15b9c0b7.png",
         ],
-        logo: require("../../Assets/img/portfolio/abel_title.png"),
+        logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         skills: [
-            {name: "html", url: require("../../Assets/img/skill/html.png")},
-            {name: "scss", url: require("../../Assets/img/skill/sass.png")},
-            {name: "js", url: require("../../Assets/img/skill/js.png")},
-            {name: "react", url: require("../../Assets/img/skill/react.png")}
+            {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
+            {name: "SCSS", url: require("../../Assets/img/skill/sass.png")},
+            {name: "Javascript", url: require("../../Assets/img/skill/js.png")},
+            {name: "React", url: require("../../Assets/img/skill/react.png")}
         ],
         description : [
             "인터렉티브한 웹사이트를 표현할 수 있는 패럴랙스 스크롤링과 이미지 슬라이드 구현을 위한 JQuery 애니메이션을 학습하며 제작한 반응형 스타벅스 코리아 클론 데스크톱 웹사이트입니다.", 
@@ -40,7 +40,7 @@ const Portfolio = () => {
     }
     
     const styles = {
-        mainColor: "#00704A",
+        mainColor: "#1E313E",
         mainFontColor: "#27251F",
         subFontColor: "#fff",
     }
