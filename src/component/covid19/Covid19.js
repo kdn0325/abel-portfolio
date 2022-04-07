@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const Covid19 = () => {
+const Covid19 = ({skill}) => {
     const data = {
         name: "국내 코로나 현황",
         pageUrl: "https://github.com/kdn0325/covid19-app",
@@ -37,8 +37,10 @@ const Covid19 = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="React")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
+    
 }
 
 export default Covid19;

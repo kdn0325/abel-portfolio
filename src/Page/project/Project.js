@@ -1,9 +1,7 @@
 import styles from "./project.module.scss";
 import {Link} from 'react-router-dom';
-import { SiReact, SiJavascript,SiSass, SiNodedotjs, SiHtml5, SiCss3, SiJquery, SiStyledcomponents,
-SiExpress, SiMongodb} from 'react-icons/si'
 
-const Project = () => {
+const Project = ({skill}) => {
     return (
         <section className={styles.project}>
             <h2 className={styles.title}>Project</h2>
@@ -17,10 +15,11 @@ const Project = () => {
                             <h3>KT-ALPHA</h3>
                             <p className={styles.desc}>"KT-Alpha Adaptive Web"</p>
                             <ul className={styles.item}>
-                                <li><span><SiHtml5 color="#ff5723"/></span><h4>HTML5</h4></li>
-                                <li><span><SiCss3 color="#007bc9"/></span><h4>CSS3</h4></li>
-                                <li><span><SiJavascript color="#f7e018"/></span><h4>Javascript</h4></li>
-                                <li><span><SiJquery color="#2e68a8"/></span><h4>Jquery</h4></li>
+                                {
+                                    skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript" || item.title==="Jquery").map((skills,idx)=>
+                                            <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                        )
+                                }
                             </ul>
                         </Link>
                 </article>
@@ -33,10 +32,11 @@ const Project = () => {
                         <h3>수원시 보건소</h3>
                         <p className={styles.desc}>"SuwonPublicHealth Adaptive Web"</p>
                         <ul className={styles.item}>
-                            <li><span><SiHtml5 color="#ff5723"/></span><h4>HTML5</h4></li>
-                            <li><span><SiCss3 color="#007bc9"/></span><h4>CSS3</h4></li>
-                            <li><span><SiJavascript color="#f7e018"/></span><h4>Javascript</h4></li>
-                            <li><span><SiJquery color="#2e68a8"/></span><h4>Jquery</h4></li>
+                                {
+                                    skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript" || item.title==="Jquery").map((skills,idx)=>
+                                            <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                        )
+                                }
                         </ul>
                     </Link>
                 </article>
@@ -49,10 +49,11 @@ const Project = () => {
                         <h3>Starbucks Korea</h3>
                         <p className={styles.desc}>"Starbucks Responsive Web"</p>
                         <ul className={styles.item}>
-                            <li><span><SiHtml5 color="#ff5723"/></span><h4>HTML5</h4></li>
-                            <li><span><SiCss3 color="#007bc9"/></span><h4>CSS3</h4></li>
-                            <li><span><SiJavascript color="#f7e018"/></span><h4>Javascript</h4></li>
-                            <li><span><SiJquery color="#2e68a8"/></span><h4>Jquery</h4></li>
+                            {
+                                skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript" || item.title==="Jquery").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                         </ul>
                     </Link>
                 </article>
@@ -65,9 +66,11 @@ const Project = () => {
                         <h3>Prev Portfolio</h3>
                         <p className={styles.desc}>"Publisher Portfolio Responsive Web"</p>
                         <ul className={styles.item}>
-                            <li><span><SiHtml5 color="#ff5723"/></span><h4>HTML5</h4></li>
-                            <li><span><SiCss3 color="#007bc9"/></span><h4>CSS3</h4></li>
-                            <li><span><SiJavascript color="#f7e018"/></span><h4>Javascript</h4></li>
+                            {
+                                skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                         </ul>
                     </Link>
                 </article>
@@ -80,7 +83,11 @@ const Project = () => {
                         <h3>Covid 19</h3>
                         <p className={styles.desc}>"covid19 Information Service Web"</p>
                         <ul className={styles.item}>
-                            <li><span><SiReact color="#61dafb"/></span><h4>React</h4></li>
+                            {
+                                skill.filter(item=>item.title==="React").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                         </ul>
                     </Link>
                 </article>
@@ -93,8 +100,11 @@ const Project = () => {
                         <h3>Watching</h3>
                         <p className={styles.desc}>"Movie Information Service Web"</p>
                         <ul className={styles.item}>
-                        <li><span><SiReact color="#61dafb"/></span><h4>React</h4></li>
-                        <li><span><SiSass color="#fe9ae4"/></span><h4>Sass</h4></li>
+                            {
+                                skill.filter(item=>item.title==="React" || item.title==="SCSS").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                         </ul>
                     </Link>
                 </article>
@@ -106,12 +116,11 @@ const Project = () => {
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Blog-App</h3>
                         <p className={styles.desc}>"Blog App"</p>
-                        <ul className={styles.item}>
-                            <li><span><SiReact color="#61dafb"/></span><h4>React</h4></li>
-                            <li><span><SiNodedotjs color="#8bc500"/></span><h4>Node.js</h4></li>
-                            <li><span><SiExpress color="#8bc500"/></span><h4>Express</h4></li>
-                            <li><span><SiMongodb color="#13aa52"/></span><h4>Mongodb</h4></li>
-                        </ul>
+                            {
+                                skill.filter(item=>item.title==="React" || item.title==="Node.js" || item.title==="Express" || item.title==="MongoDB").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                     </Link>
                 </article>
                 <article className={styles.portfolio}>
@@ -123,9 +132,11 @@ const Project = () => {
                         <h3>Portfolio</h3>
                         <p className={styles.desc}>"Front-End Portfolio Web"</p>
                         <ul className={styles.item}>
-                        <li><span><SiReact color="#61dafb"/></span><h4>React</h4></li>
-                        <li><span><SiSass color="#fe9ae4"/></span><h4>Sass</h4></li>
-                        <li><span><SiStyledcomponents color="#fe9ae4"/></span><h4>Styled-components</h4></li>
+                            {
+                                skill.filter(item=>item.title==="React" || item.title==="SCSS" || item.title==="Styled-components").map((skills,idx)=>
+                                        <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
+                                    )
+                            }
                         </ul>
                     </Link>
                 </article>

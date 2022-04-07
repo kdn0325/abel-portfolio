@@ -118,7 +118,7 @@ const Move = styled.a`
 const Right = styled.div`
     width: 70%;
     height: 100%;
-    padding: 3rem 3rem;
+    padding: 2rem;
     border-radius: 2rem;
     display: grid;
     letter-spacing: .07rem;
@@ -135,7 +135,7 @@ const Right = styled.div`
 `;
 
 const Logo = styled.img`
-    align-self: center;
+    /* align-self: center; */
     padding-left: 2rem;
     display: flex;
     width:50%;
@@ -157,14 +157,9 @@ const SkillList = styled.ul`
 `;
 
 const Skill = styled.li`
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 100%;
+    height: 100%;
     margin-right: 1.5rem;
-    background-image: url(${props => props.bgImg});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .7;
 `;
 
 const Desc = styled.ul`
@@ -252,7 +247,7 @@ const BrowserList = styled.ul`
     }
 `;
 
-const Detail = ({data,styles}) => {
+const Detail = ({data,styles,skills}) => {
     return(
     <Container>
             <Left style = {{boxShadow: `0 0 .5rem ${styles.mainColor}`}}>
@@ -269,7 +264,7 @@ const Detail = ({data,styles}) => {
                 <Logo src={data.logo} />
                 <Skills>
                     <SkillList>
-                        {data.skills.map(skill => <Skill bgImg={skill.url}></Skill>)}
+                        {skills.map(item=><Skill>{item.skillIco}</Skill>)}
                     </SkillList>
                 </Skills>
                 <Desc>

@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const Watching = () => {
+const Watching = ({skill}) => {
     const data = {
         name: "Watching",
         pageUrl: "https://abelwatching.netlify.app/",
@@ -45,8 +45,9 @@ const Watching = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="React" || item.title==="SCSS")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default Watching;

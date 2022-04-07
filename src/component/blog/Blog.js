@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const Blog = () => {
+const Blog = ({skill}) => {
     const data = {
         name: "Abel의 블로그",
         pageUrl: "https://kdn0325.github.io/StarbucksKR/",
@@ -10,7 +10,7 @@ const Blog = () => {
             "https://user-images.githubusercontent.com/91298955/161950062-17c04c2e-46f2-429f-a368-ff318a95e8f5.png",
             "https://user-images.githubusercontent.com/91298955/161950080-fc8e7df1-6276-4cbf-82a1-b8b50863abb7.png",
         ],
-        logo: "https://user-images.githubusercontent.com/91298955/161950398-cdd64398-5f2c-49f9-958a-4e1cfee28418.png",
+        logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         skills: [
             {name: "React", url: require("../../Assets/img/skill/react.png")},
             {name: "Node.js", url: require("../../Assets/img/skill/nodejs.png")},
@@ -46,8 +46,9 @@ const Blog = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="React" || item.title==="Node.js" || item.title==="Express" || item.title==="MongoDB")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default Blog;

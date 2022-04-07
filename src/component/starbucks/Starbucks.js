@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const Starbucks = () => {
+const Starbucks = ({skill}) => {
     const data = {
         name: "Starbucks Korea",
         pageUrl: "https://kdn0325.github.io/StarbucksKR/",
@@ -42,8 +42,9 @@ const Starbucks = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript" || item.title==="Jquery")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default Starbucks;

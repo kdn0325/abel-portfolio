@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const SuwonHealth = () => {
+const SuwonHealth = ({skill}) => {
     const data = {
         name: "수원시 보건소",
         pageUrl: "https://kdn0325.github.io/StarbucksKR/",
@@ -41,8 +41,9 @@ const SuwonHealth = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript" || item.title==="Jquery")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default SuwonHealth;

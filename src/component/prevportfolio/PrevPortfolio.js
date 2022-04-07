@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const PrevPortfolio = () => {
+const PrevPortfolio = ({skill}) => {
     const data = {
         name: "Portfolio",
         pageUrl: "https://kdn0325.github.io/portfolio/",
@@ -10,7 +10,7 @@ const PrevPortfolio = () => {
             "https://user-images.githubusercontent.com/91298955/161951412-60fea31e-fb5a-44f7-b0a2-94b9f4501c8e.png",
             "https://user-images.githubusercontent.com/91298955/161951425-31c2b8f8-8896-4245-80cd-e6a48905bd46.png",
         ],
-        logo: "https://user-images.githubusercontent.com/91298955/161951407-6650fbe2",
+        logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         skills: [
             {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
             {name: "CSS", url: require("../../Assets/img/skill/css.png")},
@@ -42,8 +42,9 @@ const PrevPortfolio = () => {
         mainFontColor: "#000",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="HTML5" || item.title==="CSS3"  || item.title==="Javascript")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default PrevPortfolio;

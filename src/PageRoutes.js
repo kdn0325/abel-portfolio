@@ -5,7 +5,7 @@ import Project from './Page/project/Project';
 import Contact from './Page/contact/Contact';
 import { TransitionGroup,CSSTransition } from 'react-transition-group';
 import "./pageroutes.css"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Starbucks from './component/starbucks/Starbucks';
 import KtAlpha from './component/kt-alpha/KtAlpha';
 import SuwonHealth from './component/suwonhealth/SuwonHealth';
@@ -14,8 +14,11 @@ import Covid19 from './component/covid19/Covid19';
 import Watching from './component/watching/Watching';
 import Blog from './component/blog/Blog';
 import Portfolio from './component/portfolio/Portfolio';
+import Skill from "./Assets/api/Skill";
+
 
 const PageRoutes = () => {
+    const [skill] = useState(Skill);
     const location = useLocation();
     useEffect(()=>{
         window.scrollTo(0,0)
@@ -26,15 +29,15 @@ const PageRoutes = () => {
                 <Routes location={location}>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/intro" element={<Intro/>}/>
-                    <Route path="/project/*"element={<Project/>}/>
-                    <Route path="/project/kt-alpha"  element={<KtAlpha/>}/>
-                    <Route path="/project/suwonhealth" element={<SuwonHealth/>}/>
-                    <Route path="/project/starbucks" element={<Starbucks/>}/>
-                    <Route path="/project/prevportfolio" element={<PrevPortfolio/>}/>
-                    <Route path="/project/covid19" element={<Covid19/>}/>
-                    <Route path="/project/watching" element={<Watching/>}/>
-                    <Route path="/project/blog" element={<Blog/>}/>
-                    <Route path="/project/portfolio" element={<Portfolio/>}/>
+                    <Route path="/project/*" element={<Project skill={skill}/>}/>
+                    <Route path="/project/kt-alpha"  element={<KtAlpha skill={skill}/>}/>
+                    <Route path="/project/suwonhealth" element={<SuwonHealth skill={skill}/>}/>
+                    <Route path="/project/starbucks" element={<Starbucks skill={skill}/>}/>
+                    <Route path="/project/prevportfolio" element={<PrevPortfolio skill={skill}/>}/>
+                    <Route path="/project/covid19" element={<Covid19 skill={skill}/>}/>
+                    <Route path="/project/watching" element={<Watching skill={skill}/>}/>
+                    <Route path="/project/blog" element={<Blog skill={skill}/>}/>
+                    <Route path="/project/portfolio" element={<Portfolio skill={skill}/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
             </CSSTransition>

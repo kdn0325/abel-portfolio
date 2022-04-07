@@ -1,6 +1,6 @@
 import Detail from "../Detail/Detail"
 
-const Portfolio = () => {
+const Portfolio = ({skill}) => {
     const data = {
         name: "Portfolio",
         pageUrl: "https://portfolio-abel.netlify.app",
@@ -44,8 +44,9 @@ const Portfolio = () => {
         mainFontColor: "#27251F",
         subFontColor: "#fff",
     }
+    const skills = skill.filter(item=>item.title==="React" || item.title==="SCSS" || item.title==="Styled-components")
 
-    return <Detail data = {data} styles = {styles}/>
+    return <Detail data = {data} styles = {styles} skills={skills}/>
 }
 
 export default Portfolio;
