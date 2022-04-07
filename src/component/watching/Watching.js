@@ -11,11 +11,6 @@ const Watching = ({skill}) => {
             "https://user-images.githubusercontent.com/91298955/161952385-984eee45-1947-4053-9f46-3e90721033b3.png",
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161952534-73914ea9-410c-41e8-b9fd-83af47ef8de3.png",
-        skills: [
-            {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
-            {name: "SCSS", url: require("../../Assets/img/skill/sass.png")},
-            {name: "React", url: require("../../Assets/img/skill/react.png")},
-        ],
         description : [
             "React를 사용한 첫 프로젝트이며 , TMDB API를 활용한 영화 정보 서비스입니다",
             "Axios,Router,SPA(Single Page Application),Component 분리 등 React를 사용하는 이유(최소 렌더링)를 학습했습니다.", 

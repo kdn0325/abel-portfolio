@@ -11,12 +11,6 @@ const Starbucks = ({skill}) => {
             "https://user-images.githubusercontent.com/91298955/161951710-fce14009-eccc-4916-8e92-11da0a8aa2e4.png",
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161951907-454b0677-672b-41c1-a9ec-5a9fedefbb87.png",
-        skills: [
-            {name: "html", url: require("../../Assets/img/skill/html.png")},
-            {name: "css", url: require("../../Assets/img/skill/css.png")},
-            {name: "js", url: require("../../Assets/img/skill/js.png")},
-            {name: "jquery", url: require("../../Assets/img/skill/jquery.png")}
-        ],
         description : [
             "인터렉티브한 웹사이트를 표현할 수 있는 패럴랙스 스크롤링과 이미지 슬라이드 구현을 위한 JQuery 애니메이션을 학습하며 제작한 반응형 스타벅스 코리아 클론 데스크톱 웹사이트입니다.", 
             "Safari , Chrome과 같은 다른 브라우저들과의 Cross Browsing을 학습하였습니다",

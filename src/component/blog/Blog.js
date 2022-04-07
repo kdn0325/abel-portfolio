@@ -11,12 +11,6 @@ const Blog = ({skill}) => {
             "https://user-images.githubusercontent.com/91298955/161950080-fc8e7df1-6276-4cbf-82a1-b8b50863abb7.png",
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
-        skills: [
-            {name: "React", url: require("../../Assets/img/skill/react.png")},
-            {name: "Node.js", url: require("../../Assets/img/skill/nodejs.png")},
-            {name: "Express", url: require("../../Assets/img/skill/node_express.png")},
-            {name: "MongoDB", url: require("../../Assets/img/skill/mongoDB.png")}
-        ],
         description : [
             "MongoDB와 Node.js로 Javascript만을 사용하여 어떻게 서버를 만드는지 학습하면서 만든 블로그 웹사이트입니다.", 
             "MongoDB를 사용하여 데이터베이스를 관리하고 HTTP 에러와 서버를 만들때 오류와 같은 시행 착오를 겪으면서 웹이 어떻게 만들어지는지 학습했습니다",

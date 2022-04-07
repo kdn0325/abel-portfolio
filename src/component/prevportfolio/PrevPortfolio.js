@@ -11,11 +11,6 @@ const PrevPortfolio = ({skill}) => {
             "https://user-images.githubusercontent.com/91298955/161951425-31c2b8f8-8896-4245-80cd-e6a48905bd46.png",
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
-        skills: [
-            {name: "HTML5", url: require("../../Assets/img/skill/html.png")},
-            {name: "CSS", url: require("../../Assets/img/skill/css.png")},
-            {name: "Javascript", url: require("../../Assets/img/skill/js.png")},
-        ],
         description : [
             "포트폴리오를 제작하면서 절차지향/객체지향을 이해하고 활용하며 함수, 메소드, 클래스, 프로토타입 등을 이해하고 UI 제작에 활용하였습니다", 
             "클래스형으로 함수를 만들어서 메뉴창을 구현하였고 햄버거 버튼과 애니메이션을 활용하였습니다", 
