@@ -70,10 +70,10 @@
                     right: 50%;
                     transform: translate(50%, -50%);
                     transition: opacity .5s;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     color: $white;
                     @include mobile{
-                        font-size: 3rem;
+                        font-size: 2rem;
                     }
                 }
                 
