@@ -6,5 +6,5 @@
 - styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.
 
 ### Initial Screen
-<img width="1680" alt="portfolio-abel" src="https://user-images.githubusercontent.com/91298955/161950835-9dc3aeb8-520b-4f48-b450-4f70e29a20f8.png">
+<img width="1680" alt="portfolio-abel" src="https://user-images.githubusercontent.com/91298955/161950842-3da13993-bd74-48c1-8b4d-114af1954878.png">
 
