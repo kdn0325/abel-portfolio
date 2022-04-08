@@ -12,9 +12,8 @@ const Portfolio = ({skill}) => {
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         description : [
-            "인터렉티브한 웹사이트를 표현할 수 있는 패럴랙스 스크롤링과 이미지 슬라이드 구현을 위한 JQuery 애니메이션을 학습하며 제작한 반응형 스타벅스 코리아 클론 데스크톱 웹사이트입니다.", 
-            "Safari , Chrome과 같은 다른 브라우저들과의 Cross Browsing을 학습하였습니다",
-            "웹사이트 제작을 통한 UI에 대해 조금 더 알게되었고 웹사이트 기획을 하면서 PhotoShop,Pigma를 활용하였습니다.", 
+            "React로 만든 포트폴리오 페이지입니다.", 
+            "styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.", 
         ],
         challenges : [
             "Web Standard",
@@ -23,19 +22,19 @@ const Portfolio = ({skill}) => {
             "Styled-Component",
             "SCSS",
             "Transition-Group",
-            "React-Router-Dom",
+            "React-Router-Dom v6",
         ],
         browsers: [
             "Chrome",
             "Firefox",
-            "Safari"
+            "Safari",
         ],
         period: "2022.02 ~ 2022-03", 
     }
     
     const styles = {
         mainColor: "#1E313E",
-        mainFontColor: "#27251F",
+        mainFontColor: "#808080",
         subFontColor: "#fff",
     }
     const skills = skill.filter(item=>item.title==="React" || item.title==="SCSS" || item.title==="Styled-components")

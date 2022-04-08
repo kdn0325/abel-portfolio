@@ -14,7 +14,7 @@ import Covid19 from './component/covid19/Covid19';
 import Watching from './component/watching/Watching';
 import Blog from './component/blog/Blog';
 import Portfolio from './component/portfolio/Portfolio';
-import Skill from "./Assets/api/Skill";
+import Skill from "./Assets/Skill";
 
 
 const PageRoutes = () => {

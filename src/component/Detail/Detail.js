@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link} from "react-router-dom";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import {SiGithub} from 'react-icons/si';
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+
     
 const Container = styled.section`
     position: absolute;
@@ -258,7 +260,7 @@ const Detail = ({data,styles,skills}) => {
                     <img src={data.screenshot[1]} alt="screenshot2" className="screen2" />
                     <img src={data.screenshot[2]} alt="screenshot3" className="screen3" />
                 </Screenshot>
-                <Move href={data.pageUrl} rel="noreferrer" target="_blank"><span className="hoverAni">Move to {data.name}</span></Move>
+                <Move href={data.pageUrl} rel="noreferrer" target="_blank"><span className="hoverAni"><BsFillArrowRightCircleFill style={{color:"#000",marginRight:".8rem"}}/>Move to {data.name}</span></Move>
                 <Move href={data.github} rel="noreferrer" target="_blank" className="github"><SiGithub style={{marginRight:".8rem"}} color="#000"/><span className="hoverAni">View Codes</span></Move>
             </Left>
             <Right style = {{backgroundColor: styles.mainColor, color: styles.mainFontColor, boxShadow: `0 0 .5rem ${styles.mainColor}`}}>

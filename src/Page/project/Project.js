@@ -116,11 +116,13 @@ const Project = ({skill}) => {
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Blog-App</h3>
                         <p className={styles.desc}>"Blog App"</p>
+                        <ul className={styles.item}>
                             {
                                 skill.filter(item=>item.title==="React" || item.title==="Node.js" || item.title==="Express" || item.title==="MongoDB").map((skills,idx)=>
                                         <li key={idx}><span>{skills.skillIco}</span><h4>{skills.title}</h4></li>
                                     )
                             }
+                        </ul>
                     </Link>
                 </article>
                 <article className={styles.portfolio}>
