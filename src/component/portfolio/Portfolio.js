@@ -14,6 +14,7 @@ const Portfolio = ({skill}) => {
         description : [
             "React로 만든 포트폴리오 페이지입니다.", 
             "styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.", 
+            "React-router-dom.", 
         ],
         challenges : [
             "Web Standard",
