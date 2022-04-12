@@ -12,9 +12,9 @@ const Portfolio = ({skill}) => {
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         description : [
-            "React로 만든 포트폴리오 페이지입니다.", 
+            "개인 포트폴리오 반응형 웹사이트이며 1depth 4개 메뉴, portfolio별 상세 페이지를 담았습니다", 
             "styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.", 
-            "React-router-dom.", 
+            "React-router-dom v6", 
         ],
         challenges : [
             "Web Standard",
