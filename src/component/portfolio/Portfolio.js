@@ -14,7 +14,8 @@ const Portfolio = ({skill}) => {
         description : [
             "개인 포트폴리오 반응형 웹사이트이며 1depth 4개 메뉴, portfolio별 상세 페이지를 담았습니다", 
             "styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.", 
-            "React-router-dom v6", 
+            "React-router-dom v6를 적용하여 SPA(Single Page Application)를 적용하였습니다",
+            "SSR과의 차이점을 이해하고 , 한번의 요청으로 HTML,static,JS를 받아와서 로딩하는 방식 CSR(Client Side Rendering)을 학습했습니다 ",
         ],
         challenges : [
             "Web Standard",
