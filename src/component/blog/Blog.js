@@ -3,7 +3,7 @@ import Detail from "../Detail/Detail"
 const Blog = ({skill}) => {
     const data = {
         name: "Abel의 블로그",
-        pageUrl: "https://kdn0325.github.io/StarbucksKR/",
+        pageUrl: "https://github.com/kdn0325/blog-app/",
         github: "https://kdn-blog.herokuapp.com/",
         screenshot: [
             "https://user-images.githubusercontent.com/91298955/161950067-71c5cd95-46f8-425f-95e9-107b4847e0f9.png",
