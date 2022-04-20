@@ -109,9 +109,11 @@
                 }
                 .skillIco{
                     display: block;
-                    width: 4rem;
-                    text-align: center;
                     font-size: 4rem;
+                    &:hover{
+                        font-size: 5rem;
+                        transition: .5s all;
+                    }
                 }
             }
         }
