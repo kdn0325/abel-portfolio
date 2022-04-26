@@ -18,6 +18,14 @@
         font-size: 3rem;
         text-align: center;
     }
+    h3{
+        @include flex(flex-start,flex-start);
+        font-size:2rem;
+        .smile{
+            font-size: 2.2rem;
+            margin-right: .3rem;
+        }
+    }
     .articleContact{
         padding: $container-padding;
         font-size: 2.5rem;
