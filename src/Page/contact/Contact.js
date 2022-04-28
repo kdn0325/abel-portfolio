@@ -58,14 +58,14 @@ const Contact = () => {
             </article>
             <h3><EmojiEmotionsIcon className={styles.smile}/>Education</h3>
             <article className={styles.articleContact}>
-                <ul>
+                <ul className={styles.completion}>
                     <li>디지털웹/앱디자인</li>
                     <li>VanilaJS
-                        <a href="https://kdn0325.github.io/VanilaCompletion/">수료증</a>
+                        <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/VanilaCompletion/">수료증</a>
                     </li>
                     
                     <li>프론트엔드 개발 ReactJS
-                        <a href="https://kdn0325.github.io/reactCompletion/">수료증</a>
+                        <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/reactCompletion/">수료증</a>
                     </li>
                 </ul>
             </article>
