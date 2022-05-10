@@ -52,19 +52,19 @@ const Contact = () => {
             <article className={styles.articleContact}>
                 <ul>
                     <li><CheckCircleIcon className={styles.circle}/>웹을 구현하면서 어떤 것이 더 효율적인지 비교하고 항상 더 나은 사용자 편의성을 추구합니다.</li>
-                l    <li><CheckCircleIcon className={styles.circle}/>무언가를 새롭게 알게되고, 습득해서 활용하는 과정을 항상 즐겁게 생각합니다.</li>
+                    <li><CheckCircleIcon className={styles.circle}/>무언가를 새롭게 알게되고, 습득해서 활용하는 과정을 항상 즐겁게 생각합니다.</li>
                     <li><CheckCircleIcon className={styles.circle}/>항상 도전을 통해 유연한 사고를 갖고 계속해서 배움을 통해 성장하고 싶습니다.</li>
                 </ul>
             </article>
             <h3><EmojiEmotionsIcon className={styles.smile}/>Education</h3>
             <article className={styles.articleContact}>
                 <ul className={styles.completion}>
-                    <li>디지털웹/앱디자인</li>
-                    <li>VanilaJS
+                    <li>디지털웹/앱디자인 교육과정</li>
+                    <li>VanilaJS 교육과정
                         <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/VanilaCompletion/">수료</a>
                     </li>
                     
-                    <li>프론트엔드 개발 ReactJS
+                    <li>ReactJS 교육과정
                         <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/reactCompletion/">수료</a>
                     </li>
                 </ul>
