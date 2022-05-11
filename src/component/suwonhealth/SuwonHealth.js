@@ -3,8 +3,8 @@ import Detail from "../Detail/Detail"
 const SuwonHealth = ({skill}) => {
     const data = {
         name: "수원시 보건소",
-        pageUrl: "https://kdn0325.github.io/StarbucksKR/",
-        github: "https://github.com/kdn0325/StarbucksKR",
+        pageUrl: "https://kdn0325.github.io/SuwonPublicHealth/",
+        github: "https://github.com/kdn0325/SuwonPublicHealth",
         screenshot: [
             "https://user-images.githubusercontent.com/91298955/161952039-fd7d008c-88af-4b40-bb07-318c547e7f76.png",
             "https://user-images.githubusercontent.com/91298955/161952049-a4d66967-b2a1-4408-bcbd-c52177bd626a.png",
