@@ -12,9 +12,7 @@ const Covid19 = ({skill}) => {
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950398-cdd64398-5f2c-49f9-958a-4e1cfee28418.png",
         description : [
-            "인터렉티브한 웹사이트를 표현할 수 있는 패럴랙스 스크롤링과 이미지 슬라이드 구현을 위한 JQuery 애니메이션을 학습하며 제작한 반응형 스타벅스 코리아 클론 데스크톱 웹사이트입니다.", 
-            "Safari , Chrome과 같은 다른 브라우저들과의 Cross Browsing을 학습하였습니다",
-            "웹사이트 제작을 통한 UI에 대해 조금 더 알게되었고 웹사이트 기획을 하면서 PhotoShop,Pigma를 활용하였습니다.", 
+            "국내 코로나 현황 API를 이용하여 제작한 리액트 컴포넌트입니다.", 
         ],
         challenges : [
             "React",
