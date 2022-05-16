@@ -110,7 +110,7 @@ const Project = ({skill}) => {
                 </article>
                 <article className={styles.blog}>
                     <div className={styles.Thumnail}>
-                        <img alt="blog" src="https://user-images.githubusercontent.com/91298955/159221721-8e1dc698-7f63-4654-87d5-8801a9a370ab.png"/>
+                        <img alt="blog" src="https://user-images.githubusercontent.com/91298955/168579324-ffb5dc01-6697-4909-b6b2-ed06ad74e036.png"/>
                     </div>  
                     <Link className={styles.link} to="blog">
                         <div className={styles.clickToDetail}>Click to Detail</div>
