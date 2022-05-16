@@ -6,8 +6,8 @@ const Blog = ({skill}) => {
         pageUrl: "https://kdn-blog.herokuapp.com/",
         github: "https://github.com/kdn0325/blog-app/",
         screenshot: [
-            "https://user-images.githubusercontent.com/91298955/161950067-71c5cd95-46f8-425f-95e9-107b4847e0f9.png",
-            "https://user-images.githubusercontent.com/91298955/161950062-17c04c2e-46f2-429f-a368-ff318a95e8f5.png",
+            "https://user-images.githubusercontent.com/91298955/168579789-5e63a78d-ce21-4994-ab3d-895e0b10edda.png",
+            "https://user-images.githubusercontent.com/91298955/168579324-ffb5dc01-6697-4909-b6b2-ed06ad74e036.png",
             "https://user-images.githubusercontent.com/91298955/161950080-fc8e7df1-6276-4cbf-82a1-b8b50863abb7.png",
         ],
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
