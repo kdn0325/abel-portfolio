@@ -43,7 +43,6 @@ const Contact = () => {
                     </li>
                     <li><GitHubIcon className={styles.contactIco}/>
                         <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer">Github</a>
-                        <button onClick={()=>copy("https://github.com/kdn0325")}></button>
                     </li>
                 </ul>
             </article>
