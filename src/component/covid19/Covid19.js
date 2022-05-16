@@ -3,8 +3,8 @@ import Detail from "../Detail/Detail"
 const Covid19 = ({skill}) => {
     const data = {
         name: "국내 코로나 현황",
-        pageUrl: "https://github.com/kdn0325/covid19-app",
-        github: "https://kdn0325.github.io/covid19-app/",
+        pageUrl: "https://kdn0325.github.io/covid19-app/",
+        github: "https://github.com/kdn0325/covid19-app",
         screenshot: [
             "https://user-images.githubusercontent.com/91298955/161950401-93b3f7a8-cdb5-40db-ab45-a54689ebc213.png",
             "https://user-images.githubusercontent.com/91298955/161950418-750796a1-a94d-412e-8636-2c9d87a1dfb5.png",
