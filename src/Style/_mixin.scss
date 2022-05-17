@@ -1,13 +1,19 @@
+/* 플렉스 설정 */
+
 @mixin flex ($aligin-item, $justify-content){
     display: flex;
     align-items: $aligin-item;
     justify-content: $justify-content;
 }
 
+/* 그리드 설정 */
+
 @mixin grid($aligin-self,$justify-self) {
     align-self: $aligin-self;
     justify-self: $justify-self;
 }
+
+/* 플렉스 right 기본  */
 
 %flex-right{
     display: flex;

@@ -20,6 +20,8 @@ import Skill from "./Assets/Skill";
 const PageRoutes = () => {
     const [skill] = useState(Skill);
     const location = useLocation();
+    /* 경로 변경시 기본 스크롤값 복원 */
+    
     useEffect(()=>{
         window.scrollTo(0,0)
     },[location])

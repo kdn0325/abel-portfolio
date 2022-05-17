@@ -1,7 +1,11 @@
+/* 메인컬러 */
+
 $body-color:#0f0f0f;
 $main-color:#6e7783;
 $white:#f1f5f9;
 $black:#191919;
+
+/* 기본 주조색,기본 패딩,마진 */
 
 $main-width:62rem;
 $main-border:.5rem solid #090a0f;
@@ -11,6 +15,8 @@ $main-padding:7rem 3rem 4rem;
 $main-margin:10rem auto 0;
 
 $container-padding:1.5rem 2.5rem;
+
+/* 반응형에 따른 너비 */
 
 $mobile-width:37rem;
 $tablet-width:64rem;

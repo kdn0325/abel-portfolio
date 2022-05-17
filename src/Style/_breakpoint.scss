@@ -1,5 +1,7 @@
 @use "./variables" as *;
 
+/* 반응형 모바일 */
+
 @mixin mobile {
     @media only screen and(
         max-width:$mobile-width
@@ -7,6 +9,8 @@
         @content;
     }
 }
+
+/* 반응형 태블릿 */
 
 @mixin tablet {
     @media only screen and(

@@ -11,6 +11,7 @@ import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { useRef } from "react";
 
 const Contact = () => {
+    /* 복사 */
     const copyref = useRef("")
     const copy = (text) =>{
         if(!document.queryCommandSupported("copy")){
