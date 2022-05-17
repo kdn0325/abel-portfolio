@@ -57,11 +57,20 @@
                     font-size: 1.25rem;
                     cursor: pointer;
                     background: none;
+
+                    &:hover{
+                        color: #d32f2f;
+                    }
                 }
                 .circle{
                     font-size: 2.5rem;
                     margin-right: .5rem;
                     color: #a5c547;
+                }
+                a{
+                    &:hover{
+                        color: #0091ea;
+                    }
                 }
             }
         }

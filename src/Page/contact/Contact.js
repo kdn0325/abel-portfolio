@@ -5,7 +5,6 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import LinkIcon from '@mui/icons-material/Link';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { useRef } from "react";
@@ -34,16 +33,16 @@ const Contact = () => {
                     <li><AccountBoxIcon className={styles.contactIco}/>Dong-Nyeong-Kim</li>
                     <li><LocationOnIcon className={styles.contactIco}/>Suwon-si Gyeonggi-do, Korea</li>
                     <li><PhoneIphoneIcon className={styles.contactIco}/>010-5520-3071
-                        <button onClick={()=>copy("01055203071")}><ContentCopyIcon className={styles.ico}/></button>
+                        <button onClick={()=>copy("01055203071")} name="복사하기"><ContentCopyIcon className={styles.ico}/></button>
                     </li>
                     <li><EmailIcon className={styles.contactIco}/>
-                        <a href ="mailto:sexy-ehdsud@nate.com">sexy-ehdsud@nate.com</a>
-                        <button onClick={()=>copy("sexy-ehdsud@nate.com")} ref={copyref}>
+                        <a href ="mailto:sexy-ehdsud@nate.com" title="주소로 이메일 전송">sexy-ehdsud@nate.com</a>
+                        <button onClick={()=>copy("sexy-ehdsud@nate.com")} ref={copyref} name="복사하기">
                             <ContentCopyIcon className={styles.ico}/>
                         </button>
                     </li>
                     <li><GitHubIcon className={styles.contactIco}/>
-                        <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer">Github</a>
+                        <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer" title="Abel의 github 바로가기">Github</a>
                     </li>
                 </ul>
             </article>
