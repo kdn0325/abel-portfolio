@@ -94,7 +94,7 @@ const Intro = () => {
         },
         {
             title: "TypeScript",
-            skillIco: <SiTypescript color="#007acc"
+            skillIco: <SiTypescript color="#007acc"/>,
         },
     ]
 
