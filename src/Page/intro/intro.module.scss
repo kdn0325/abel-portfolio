@@ -36,6 +36,9 @@
 
             &_img{
                 margin-right: 10rem;
+                @include tablet{
+                    margin-right: 5rem;
+                }
                 
                 @include mobile{
                     display: none;
@@ -54,10 +57,16 @@
                             padding: 1rem;
                             margin-bottom: 1rem;
                             a{
+                                
                                 &:hover{
                                     text-decoration: underline;
                                     color: #0091ea;
                                 }
+                            }
+
+                            @include tablet{
+                                padding: 1rem 0;
+                                @include flex(center,space-between);
                             }
 
                             @include mobile{
