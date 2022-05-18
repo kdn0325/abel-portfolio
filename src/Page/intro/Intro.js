@@ -35,6 +35,7 @@ const Intro = () => {
     {
         title: "Design", 
         txt1: "디자인 작업을 위한 Photoshop, Illustratior, Figma, Jeplin 사용 능력이 있습니다." ,
+        txt2: "Pigma , Zeplin을 활용하여 웹 기획을 구현하고 반응형/적응형 웹 퍼블리싱을 해본 경험이 있습니다"
     },
     {
         title: "Co-work", 
