@@ -35,7 +35,7 @@
             @include flex(center,space-between);
 
             &_img{
-                margin-right: 5rem;
+                margin-right: 10rem;
                 
                 @include mobile{
                     display: none;
@@ -43,14 +43,22 @@
             }
         
             .detail{
-                display: flex;
-                
+                @include flex(center,center);
+
+                width: 100%;
                     .desc{
+                        width: 100%;
                         li{
-                            display: flex;
-                            font-size: 1.5rem;
-                            padding: .5rem;
+                            @include flex(center,space-between);
+                            font-size: 1rem;
+                            padding: 1rem;
                             margin-bottom: 1rem;
+                            a{
+                                &:hover{
+                                    text-decoration: underline;
+                                    color: #0091ea;
+                                }
+                            }
 
                             @include mobile{
                                 margin-bottom: .5rem;

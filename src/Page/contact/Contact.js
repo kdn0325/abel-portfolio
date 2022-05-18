@@ -5,6 +5,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import HomeIcon from '@mui/icons-material/Home';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { useRef } from "react";
@@ -40,6 +41,9 @@ const Contact = () => {
                         <button onClick={()=>copy("sexy-ehdsud@nate.com")} ref={copyref} name="복사하기">
                             <ContentCopyIcon className={styles.ico}/>
                         </button>
+                    </li>
+                    <li><HomeIcon className={styles.contactIco}/>
+                        <a href ="https://kdn0325.tistory.com" target="_blank" rel="noreferrer" title="Abel의 블로그 바로가기">Blog</a>
                     </li>
                     <li><GitHubIcon className={styles.contactIco}/>
                         <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer" title="Abel의 github 바로가기">Github</a>
