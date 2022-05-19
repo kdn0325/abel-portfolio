@@ -14,6 +14,7 @@ const SuwonHealth = ({skill}) => {
         description : [
             "관공서 웹사이트를 통해 웹 사이트를 이해하고 HTML,CSS,JQuery를 학습하고 Bxslider를 사용하여 이미지 슬라이드를 제작한 적응형 데스크톱 웹사이트입니다.", 
             "IE에 따른 웹 표준 Cross Browsing을 학습하였습니다",
+            "** View Codes를 클릭하시면 PROJECT 기여도와 SKILL의 기여도를 보실 수 있습니다. **",
         ],
         challenges : [
             "Web Standard",

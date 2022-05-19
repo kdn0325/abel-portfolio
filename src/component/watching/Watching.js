@@ -16,6 +16,7 @@ const Watching = ({skill}) => {
             "Axios,Router,SPA(Single Page Application),Component 분리 등 React를 사용하는 이유(최소 렌더링)를 학습했습니다.", 
             "SCSS로 스타일을 전역적으로 사용하여 컴포넌트 별 공통 스타일을 주어 재사용성의 중요성을 익혔습니다", 
             "React Router Dom v5버전과 업데이트된 v6 차이를 학습하였습니다", 
+            "** View codes를 클릭하시면 PROJECT 기여도와 SKILL의 기여도를 보실 수 있습니다. **",
         ],
         challenges : [
             "The Movie DataBase API",

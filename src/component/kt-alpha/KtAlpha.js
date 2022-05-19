@@ -15,6 +15,7 @@ const KtAlpha = ({skill}) => {
             "웹 사이트 제작을 학습, HTML,CSS 학습을 적용하여 서브페이지까지 제작한 적응형 데스크톱 웹사이트입니다 ", 
             "IE/Chrome/Safari Cross Browsing을 학습하였습니다",
             "PhotoShop으로 레이아웃의 기초를 학습하고 Zeplin을 활용하여 웹 퍼블리싱의 기초를 학습했습니다.", 
+            "** View Codes를 클릭하시면 PROJECT 기여도와 SKILL의 기여도를 보실 수 있습니다. **",
         ],
         challenges : [
             "Web Standard",
