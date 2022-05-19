@@ -60,7 +60,9 @@ const Contact = () => {
             <h3><EmojiEmotionsIcon className={styles.smile}/>Education</h3>
             <article className={styles.articleContact}>
                 <ul className={styles.completion}>
-                    <li>디지털웹/앱디자인 교육과정</li>
+                    <li>디지털웹/앱디자인 교육과정
+                        <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/publisherCompletion/">수료</a>
+                    </li>
                     <li>VanilaJS 교육과정
                         <a target="_blank" rel="noreferrer" href="https://kdn0325.github.io/VanilaCompletion/">수료</a>
                     </li>
