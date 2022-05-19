@@ -21,7 +21,7 @@ const Starbucks = ({skill}) => {
             "Web Standard",
             "CSS layout(flex)",
             "Responsive Web",
-            "스토리보드,와이어프레임 제작, 제작 ppt 작성",
+            "정보구조도,와이어프레임 제작, 제작기획 과정 ppt 작성",
             "Pigma를 통한 Responsive에 따른 웹 구현",
             "PhotoShop",
             "Pigma",
