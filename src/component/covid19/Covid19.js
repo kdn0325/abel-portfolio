@@ -13,6 +13,7 @@ const Covid19 = ({skill}) => {
         logo: "https://user-images.githubusercontent.com/91298955/161950398-cdd64398-5f2c-49f9-958a-4e1cfee28418.png",
         description : [
             "국내 코로나 현황 API를 이용하여 제작한 리액트 컴포넌트입니다.", 
+            "Chart.js를 학습하며 Open API를 활용하여 제작했습니다.", 
         ],
         challenges : [
             "React",
