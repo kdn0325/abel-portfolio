@@ -20,6 +20,7 @@ const Covid19 = ({skill}) => {
             "React",
             "Chart JS",
             "Axios",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

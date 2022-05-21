@@ -21,6 +21,7 @@ const SuwonHealth = ({skill}) => {
             "CSS layout(postion)",
             "Adaptive Web",
             "Bx-Slider",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

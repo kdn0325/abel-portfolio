@@ -27,6 +27,7 @@ const Blog = ({skill}) => {
             "MongoDB를 활용한 Database관리 , Schema",
             "Bcrypt",
             "Heroku Deploy",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

@@ -26,6 +26,7 @@ const Starbucks = ({skill}) => {
             "Pigma를 통한 Responsive에 따른 웹 구현",
             "PhotoShop",
             "Pigma",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

@@ -22,6 +22,7 @@ const KtAlpha = ({skill}) => {
             "CSS layout(position)",
             "Adaptive Web",
             "Zeplin를 사용하여 Photoshop으로 제작한 Layout Publishing",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

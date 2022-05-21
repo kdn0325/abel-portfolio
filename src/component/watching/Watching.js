@@ -27,6 +27,7 @@ const Watching = ({skill}) => {
             "React Hook",
             "React Router Dom v6",
             "Youtube Api & iframe",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",

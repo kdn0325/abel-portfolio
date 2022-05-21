@@ -25,6 +25,7 @@ const Portfolio = ({skill}) => {
             "SCSS",
             "Transition-Group",
             "React-Router-Dom v6",
+            "W3C 웹 표준 검사 완료",
         ],
         browsers: [
             "Chrome",
