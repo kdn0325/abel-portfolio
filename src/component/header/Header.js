@@ -26,7 +26,7 @@ const Header = () => {
         {title : "Contact" , path : "/contact"},
     ]
     return(
-        <div className={styles.header} ref={headerRef}>
+        <header className={styles.header} ref={headerRef}>
             <div className={styles.header_wrap}>
                 <h1 className={styles.logo}>
                     <Link to="/"><img alt="abel_title" src="https://user-images.githubusercontent.com/91298955/161248419-bc807d7e-f379-4f2e-95c4-d31f71cb4727.png"/></Link>
@@ -45,7 +45,7 @@ const Header = () => {
                     }
                 </ul>
             </div>
-        </div>
+        </header>
     )
 }
 
