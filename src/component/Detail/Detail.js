@@ -39,24 +39,32 @@ const Left = styled.div`
         position: absolute;
         top: 50%;
         right: 105%;
+        color:#fff;
         transform: translateY(-50%);
         height: 10%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        color: #fff;
+
         .iconArrowLeft{
-            font-size: 3.5rem;
-            font-weight: 100;
-            margin-right: .5rem;
+            font-size: 2rem;
+            margin-right: -.5rem;
             animation: repeatMoveLeft 2s infinite linear;
-            @keyframes repeatMoveLeft{
-                0%{opacity: 0;}
-                30%{opacity: .4;}
-                50%{opacity: .5; transform: translateX(-10%)}
-                70%{opacity: .4;}
-                100%{opacity: 0; transform: translateX(-30%)}
+                @keyframes repeatMoveLeft{
+                    0%{opacity: 0;}
+                    30%{opacity: .4;}
+                    50%{opacity: .5;}
+                    70%{opacity: .4;}
+                    100%{opacity: 0;}
+                }
+                @media screen and (min-width:23rem) and (max-width:37rem){
+                    margin-right: -1.5rem;
+                }
+                @media screen and (min-width:38rem) and (max-width:50rem){
+                    margin-right: 0rem;
+                }
             }
+            
         }
     }
 `;
@@ -107,8 +115,7 @@ const Move = styled.a`
     .rightArrow{
         display: block;
         width: 15%;
-        font-size: 1.4rem;
-        margin-right: .5rem;
+
     }
     img{
         display: block;
@@ -138,7 +145,6 @@ const Right = styled.div`
 `;
 
 const Logo = styled.img`
-    /* align-self: center; */
     padding-left: 2rem;
     display: flex;
     width:50%;
@@ -254,7 +260,7 @@ const Detail = ({data,styles,skills}) => {
     return(
     <Container>
             <Left style = {{boxShadow: `0 0 .5rem ${styles.mainColor}`}}>
-                <Link className="goBack" to="/project"><DoubleArrowIcon style={{transform:"scaleX(-1)"}}/></Link>
+                <Link className="goBack" to="/project"><DoubleArrowIcon className="iconArrowLeft" style={{transform:"scaleX(-1)"}}/></Link>
                 <Screenshot>
                     <img src={data.screenshot[0]} alt="screenshot1" className="screen1" />
                     <img src={data.screenshot[1]} alt="screenshot2" className="screen2" />
