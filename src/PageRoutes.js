@@ -26,24 +26,26 @@ const PageRoutes = () => {
         window.scrollTo(0,0)
     },[location])
     return (
-        <TransitionGroup>
-            <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={500}>
-                <Routes location={location}>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/intro" element={<Intro/>}/>
-                    <Route path="/project/*" element={<Project skill={skill}/>}/>
-                    <Route path="/project/kt-alpha"  element={<KtAlpha skill={skill}/>}/>
-                    <Route path="/project/suwonhealth" element={<SuwonHealth skill={skill}/>}/>
-                    <Route path="/project/starbucks" element={<Starbucks skill={skill}/>}/>
-                    <Route path="/project/prevportfolio" element={<PrevPortfolio skill={skill}/>}/>
-                    <Route path="/project/covid19" element={<Covid19 skill={skill}/>}/>
-                    <Route path="/project/watching" element={<Watching skill={skill}/>}/>
-                    <Route path="/project/blog" element={<Blog skill={skill}/>}/>
-                    <Route path="/project/portfolio" element={<Portfolio skill={skill}/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                </Routes>
-            </CSSTransition>
-        </TransitionGroup>
+        <main className="main">
+            <TransitionGroup>
+                <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={500}>
+                    <Routes location={location}>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/intro" element={<Intro/>}/>
+                        <Route path="/project/*" element={<Project skill={skill}/>}/>
+                        <Route path="/project/kt-alpha"  element={<KtAlpha skill={skill}/>}/>
+                        <Route path="/project/suwonhealth" element={<SuwonHealth skill={skill}/>}/>
+                        <Route path="/project/starbucks" element={<Starbucks skill={skill}/>}/>
+                        <Route path="/project/prevportfolio" element={<PrevPortfolio skill={skill}/>}/>
+                        <Route path="/project/covid19" element={<Covid19 skill={skill}/>}/>
+                        <Route path="/project/watching" element={<Watching skill={skill}/>}/>
+                        <Route path="/project/blog" element={<Blog skill={skill}/>}/>
+                        <Route path="/project/portfolio" element={<Portfolio skill={skill}/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                    </Routes>
+                </CSSTransition>
+            </TransitionGroup>
+        </main>
     );
 };
 
