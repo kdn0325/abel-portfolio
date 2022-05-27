@@ -6,6 +6,7 @@
 - styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.
 - React-router-dom v6를 적용하여 SPA(Single Page Application)를 적용하였습니다
 
+## 
 <details>
 <summary><span style="color:red">&#9658;코드 리뷰 보기</span></summary>
 <div markdown="1">       
