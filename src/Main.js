@@ -27,6 +27,7 @@ const Main = () => {
         window.scrollTo(0,0)
     },[location])
     return (
+        // Footer 추가  - 05/22
         <main className={styles.main}>
             <TransitionGroup>
                 <CSSTransition in={false} key={location.pathname} classNames="fade" timeout={500}>
