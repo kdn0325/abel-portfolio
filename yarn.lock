@@ -9183,10 +9183,10 @@
     "shallowequal" "^1.1.0"
     "supports-color" "^5.5.0"
 
-"styled-reset@^4.3.4":
-  "integrity" "sha512-1UmkWmRwSPfzolKleyPjbZdBqkxSXv5ImqTP5WeSjWk0Z7IvEzsrYhrqinZfCg10eM1P6BEtFly8+puQJnN/0A=="
-  "resolved" "https://registry.npmjs.org/styled-reset/-/styled-reset-4.3.4.tgz"
-  "version" "4.3.4"
+"styled-reset@^4.4.1":
+  "integrity" "sha512-7j99JIwzotNQmoS8MQJu8OTBDE48gaMEr6SYvuH8xfL0K/a5vNHSRaccTfAiGBs9D3mjLDPxg5iLh3HqFvefPQ=="
+  "resolved" "https://registry.npmjs.org/styled-reset/-/styled-reset-4.4.1.tgz"
+  "version" "4.4.1"
 
 "stylehacks@^5.1.0":
   "integrity" "sha512-SzLmvHQTrIWfSgljkQCw2++C9+Ne91d/6Sp92I8c5uHTcy/PgeHamwITIbBW9wnFTY/3ZfSXR9HIL6Ikqmcu6Q=="

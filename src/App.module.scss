@@ -34,7 +34,7 @@ a{
     color: #222;
 }
 
-.ir_pm {
+%ir_pm {
     display:inline-block;
     overflow:hidden;
     font-size:0;
@@ -42,7 +42,7 @@ a{
     text-indent:-9999px;
 } /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
 
-.ir_wa {
+%ir_wa {
     display:block;
     overflow:hidden;
     position:relative;
@@ -51,7 +51,7 @@ a{
     height: 100%;
 } /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
 
-.ir_so {
+%ir_so {
     overflow: hidden; 
     position:absolute; 
     width:0; 
