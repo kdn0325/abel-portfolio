@@ -28,7 +28,7 @@
                         transition: width .3s ease;
                         background-color: $black; 
                     }
-                    &:active::after{
+                    &:hover::after{
                         width: 100%;
                         opacity: 1;
                     }
