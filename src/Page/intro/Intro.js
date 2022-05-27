@@ -127,7 +127,7 @@ const Intro = () => {
     ]
     return (
         <section className={styles.intro}>
-            <h2 className={styles.title}>Introduction</h2>
+            <h2 className={styles.title}>INTRO</h2>
             <article className={styles.profile}>
                 <div className={styles.profile_img}>
                     <img alt="profile" src="https://user-images.githubusercontent.com/91298955/161258299-ecbaf570-7347-46a3-99c2-57e057466d82.png"/>

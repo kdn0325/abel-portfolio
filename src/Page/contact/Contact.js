@@ -28,7 +28,7 @@ const Contact = () => {
     }
     return (
         <section className={styles.contact}>
-            <h2 className={styles.title}>Contact</h2>
+            <h2 className={styles.title}>CONTACT</h2>
             <article className={styles.articleContact}>
                 <ul>
                     <li><AccountBoxIcon className={styles.contactIco}/>Dong-Nyeong-Kim</li>

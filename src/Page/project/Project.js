@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Project = ({skill}) => {
     return (
         <section className={styles.project}>
-            <h2 className={styles.title}>Project</h2>
+            <h2 className={styles.title}>PROJECT</h2>
             <div className={styles.projectContainer}>
                 <article className={styles.ktalpha}>
                         <div className={styles.Thumnail}>
