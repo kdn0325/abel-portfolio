@@ -5,22 +5,23 @@
     background: transparent;
     font-size: 1rem;
     padding: 1.5rem 0;
-    position: absolute;
     color: $white;
     left: 0;
     bottom: 0;
     text-align: center;
     z-index: 99;
     @include flex(center,center);
-    height: 7.5rem;
 
 
     .footer_wrap{
         max-width: $main-width;
+        color: $white;
+
 
         .address{
-            font-style: normal;
             color: $main-color;
+            margin-bottom: .2rem;
+            font-style: normal;
         }
     }
 }
