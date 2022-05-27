@@ -3,8 +3,8 @@ import Detail from "../Detail/Detail"
 const PrevPortfolio = ({skill}) => {
     const data = {
         name: "Portfolio",
-        pageUrl: "https://kdn0325.github.io/portfolio/",
-        github: "https://github.com/kdn0325/portfolio",
+        pageUrl: "https://kdn0325.github.io/prev-portfolio/",
+        github: "https://github.com/kdn0325/prev-portfolio",
         screenshot: [
             "https://user-images.githubusercontent.com/91298955/161951416-cd10f2fc-6eeb-4174-8a55-2bddf6fbbc55.png",
             "https://user-images.githubusercontent.com/91298955/161951412-60fea31e-fb5a-44f7-b0a2-94b9f4501c8e.png",
