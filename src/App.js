@@ -1,5 +1,5 @@
 import { BrowserRouter} from "react-router-dom";
-import { Reset } from 'styled-reset'
+import "./App.module.scss"
 import styles from "./App.module.scss";
 import Header from './component/header/Header';
 import Footer from './component/footer/Footer';
@@ -11,7 +11,6 @@ const App = () => {
     <BrowserRouter>
         <div className={styles.wrap}>
             {/* Reset 초기화 05/27 */}
-            <Reset/>
             <Header/>
             <Main/>
             <Footer/>
