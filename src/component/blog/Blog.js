@@ -32,7 +32,8 @@ const Blog = ({skill}) => {
         browsers: [
             "Chrome",
             "Firefox",
-            "Safari"
+            "Safari",
+            "Edge",
         ],
         period: "2021.02 ~ 2021-03", 
     }

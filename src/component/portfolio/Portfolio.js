@@ -31,6 +31,7 @@ const Portfolio = ({skill}) => {
             "Chrome",
             "Firefox",
             "Safari",
+            "Edge",
         ],
         period: "2022.02 ~ 2022-03", 
     }

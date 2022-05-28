@@ -30,6 +30,7 @@ const PrevPortfolio = ({skill}) => {
             "Chrome",
             "Firefox",
             "Safari",
+            "Edge",
         ],
         period: "2021.09 ~ 2021-10", 
     }

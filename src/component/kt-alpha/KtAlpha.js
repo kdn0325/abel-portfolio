@@ -29,6 +29,7 @@ const KtAlpha = ({skill}) => {
             "Firefox",
             "Safari",
             "IE",
+            "Edge",
         ],
         period: "2021.08 ~ 2021.9", 
     }

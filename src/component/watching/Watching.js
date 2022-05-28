@@ -32,7 +32,8 @@ const Watching = ({skill}) => {
         browsers: [
             "Chrome",
             "Firefox",
-            "Safari"
+            "Safari",
+            "Edge",
         ],
         period: "2022.02 ~ 2021-03", 
     }

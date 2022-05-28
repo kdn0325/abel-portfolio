@@ -31,7 +31,8 @@ const Starbucks = ({skill}) => {
         browsers: [
             "Chrome",
             "Firefox",
-            "Safari"
+            "Safari",
+            "Edge",
         ],
         period: "2021.09 ~ 2021.10", 
     }
