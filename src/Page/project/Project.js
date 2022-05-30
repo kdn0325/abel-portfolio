@@ -10,7 +10,7 @@ const Project = ({skill}) => {
                         <div className={styles.Thumnail}>
                             <img alt="KT_ALPHA" src="https://user-images.githubusercontent.com/91298955/148898550-8ef0c715-1edf-4d7e-8aba-23d1db8e3a2a.png"/>
                         </div>
-                        <Link className={styles.link} to="kt-alpha">
+                        <Link className={styles.link} to="kt-alpha" title="kt-alpha">
                             <div className={styles.clickToDetail}>Click to Detail</div>
                             <h3>KT-ALPHA</h3>
                             <p className={styles.desc}>"KT-Alpha Adaptive Web"</p>
@@ -27,7 +27,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="suwonpublichealth" src="https://user-images.githubusercontent.com/91298955/148897654-05885afa-fd2b-4aa8-9f99-0a901bc7253a.png"/>
                     </div>
-                    <Link className={styles.link} to="suwonhealth">
+                    <Link className={styles.link} to="suwonhealth" title="suwonhealth">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>수원시 보건소</h3>
                         <p className={styles.desc}>"SuwonPublicHealth Adaptive Web"</p>
@@ -44,7 +44,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="STARBUCKS" src="https://user-images.githubusercontent.com/91298955/148896831-d5585f8f-ff9f-49fc-9b96-599bb9fc38da.png"/>
                     </div>                    
-                    <Link className={styles.link} to="starbucks">
+                    <Link className={styles.link} to="starbucks" title="starbucks">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Starbucks Korea</h3>
                         <p className={styles.desc}>"Starbucks Responsive Web"</p>
@@ -61,7 +61,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="prevportfolio" src="https://user-images.githubusercontent.com/91298955/148900465-8f2e4fe3-3131-41fa-a2c6-ee7cfae3ce08.png"/>
                     </div>  
-                    <Link className={styles.link} to="prevportfolio">
+                    <Link className={styles.link} to="prevportfolio" title="prevportfolio">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Prev Portfolio</h3>
                         <p className={styles.desc}>"Publisher Portfolio Responsive Web"</p>
@@ -78,7 +78,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="covid19" src="https://user-images.githubusercontent.com/91298955/148898928-5727cb4d-aec8-4162-8a29-8a838c9cee3f.png"/>
                     </div>  
-                    <Link className={styles.link} to="covid19">
+                    <Link className={styles.link} to="covid19" title="covid19">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Covid 19</h3>
                         <p className={styles.desc}>"covid19 Information Service Web"</p>
@@ -95,7 +95,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="watching" src="https://user-images.githubusercontent.com/91298955/157289751-6a999366-0615-4e3c-83b0-7a6587ac4b93.png"/>
                     </div>  
-                    <Link className={styles.link} to="watching">
+                    <Link className={styles.link} to="watching" title="watching">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Watching</h3>
                         <p className={styles.desc}>"Movie Information Service Web"</p>
@@ -112,7 +112,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="blog" src="https://user-images.githubusercontent.com/91298955/168579324-ffb5dc01-6697-4909-b6b2-ed06ad74e036.png"/>
                     </div>  
-                    <Link className={styles.link} to="blog">
+                    <Link className={styles.link} to="blog" title="blog">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Blog-App</h3>
                         <p className={styles.desc}>"Blog App"</p>
@@ -129,7 +129,7 @@ const Project = ({skill}) => {
                     <div className={styles.Thumnail}>
                         <img alt="portfolio" src="https://user-images.githubusercontent.com/91298955/161248827-9b397fe0-0f58-4fb8-b9f1-e303d511521d.png"/>
                     </div>  
-                    <Link className={styles.link} to="portfolio">
+                    <Link className={styles.link} to="portfolio" title="portfolio">
                         <div className={styles.clickToDetail}>Click to Detail</div>
                         <h3>Portfolio</h3>
                         <p className={styles.desc}>"Front-End Portfolio Web"</p>
