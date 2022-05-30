@@ -260,7 +260,7 @@ const Detail = ({data,styles,skills}) => {
     return(
     <Container>
             <Left style = {{boxShadow: `0 0 .5rem ${styles.mainColor}`}}>
-                <Link className="goBack" to="/project"><DoubleArrowIcon className="iconArrowLeft" style={{transform:"scaleX(-1)"}}/></Link>
+                <Link className="goBack" to="/project" title="뒤로 가기"><DoubleArrowIcon className="iconArrowLeft" style={{transform:"scaleX(-1)"}}/></Link>
                 <Screenshot>
                     <img src={data.screenshot[0]} alt="screenshot1" className="screen1" />
                     <img src={data.screenshot[1]} alt="screenshot2" className="screen2" />

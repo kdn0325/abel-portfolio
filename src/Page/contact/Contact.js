@@ -43,7 +43,7 @@ const Contact = () => {
                         </button>
                     </li>
                     <li><HomeIcon className={styles.contactIco}/>
-                        <a href ="https://kdn0325.tistory.com" target="_blank" rel="noreferrer" title="Abel의 블로그 바로가기">Blog</a>
+                        <a href ="https://kdn0325.tistory.com" target="_blank" rel="noreferrer" title="Abel의 블로그 바로가기">Abel의 웹 개발 자습서</a>
                     </li>
                     <li><GitHubIcon className={styles.contactIco}/>
                         <a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer" title="Abel의 github 바로가기">Github</a>

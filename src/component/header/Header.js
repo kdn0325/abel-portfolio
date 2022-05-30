@@ -30,14 +30,14 @@ const Header = () => {
             {/* 시맨틱 태그로 변경 05/22 */}
             <div className={styles.header_wrap}>
                 <h1 className={styles.logo}>
-                    <Link to="/"><img alt="abel_logo" src="https://user-images.githubusercontent.com/91298955/161248419-bc807d7e-f379-4f2e-95c4-d31f71cb4727.png"/></Link>
+                    <Link to="/" title="abel-portfolio"><img alt="abel-portfolio" src="https://user-images.githubusercontent.com/91298955/161248419-bc807d7e-f379-4f2e-95c4-d31f71cb4727.png"/></Link>
                 </h1>
                     <nav>
                         <ul className={styles.menu}>
                             {
                                 menu.map((menu,idx)=>
                                     <li key ={menu.title + idx} className={styles.menu_list}>
-                                        <Link to={menu.path} className={styles.link} href={menu.path}>
+                                        <Link to={menu.path} className={styles.link} href={menu.path} title={menu.title}>
                                                 {menu.title}
                                         </Link>
                                     </li>
