@@ -9,7 +9,7 @@
 ## 
 
 <details>
-<summary><span style="color:red">&#9658;코드 리뷰 보기</span></summary>
+<summary><span style="color:red">&#128293; 클릭 하시면 느낀점 리뷰를 보실 수 있습니다. &#128591;</span></summary>
 <div markdown="1">       
   
 포트폴리오는 이전에 만들었던 포트폴리오의 단점들을 보완하고자 학습한 내용을 최대한 활용하여 제작하였습니다.
