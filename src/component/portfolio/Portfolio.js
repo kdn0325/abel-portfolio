@@ -13,8 +13,8 @@ const Portfolio = ({skill}) => {
         logo: "https://user-images.githubusercontent.com/91298955/161950831-e472801f-1df4-4945-9680-95abf87861b7.png",
         description : [
             "개인 포트폴리오 React로 제작한 반응형 웹사이트이며 1depth 4개 메뉴, portfolio별 상세 페이지를 담았습니다", 
-            "styled-component, SCSS, Transition을 활용하여 스타일링을 구현했습니다.", 
-            "React-router-dom v6를 적용하여 SPA(Single Page Application)를 적용하였습니다",
+            "styled-component를 통한 컴포넌트별 스타일과 SCSS, Transition-Group을 활용하여 스타일의 재사용성을 학습하여 구현하였습니다.", 
+            "React-router-dom v6를 적용하여 SPA(Single Page Application)를 학습하였습니다",
             "** View Codes를 클릭하시면 PROJECT 기여도와 SKILL의 기여도를 보실 수 있습니다. **",
         ],
         challenges : [
