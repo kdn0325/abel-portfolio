@@ -1,7 +1,7 @@
 import styles from "./intro.module.scss"
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import { SiReact,SiRedux, SiJavascript,SiSass, SiNodedotjs, SiHtml5, SiCss3, SiJquery, SiStyledcomponents,
-SiExpress, SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiFigma,SiGithub,SiTypescript,SiNextdotjs} from 'react-icons/si';
+SiExpress, SiMongodb,SiAdobephotoshop,SiAdobeillustrator,SiFigma,SiGithub,SiTypescript,SiNextdotjs,SiGraphql} from 'react-icons/si';
 import { GiZeppelin } from "react-icons/gi";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
@@ -104,6 +104,10 @@ const Intro = () => {
         {
             title: "Next.js",
             skillIco: <SiNextdotjs color="#000000"/>,
+        },
+        {
+            title: "GraphQL",
+            skillIco: <SiGraphql color="#e535ab"/>,
         },
     ]
 
