@@ -22,7 +22,6 @@ const Watching = ({skill}) => {
             "The Movie DataBase API",
             "Flex in SCSS",
             "Swiper",
-            "Axios",
             "Responsive Web",
             "React Hook",
             "React Router Dom v6",
