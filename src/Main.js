@@ -5,7 +5,6 @@ import Project from './Page/project/Project';
 import Contact from './Page/contact/Contact';
 import { TransitionGroup,CSSTransition } from 'react-transition-group';
 import styles from "./Main.module.scss"
-import "./transition.css"
 import { useEffect, useState } from "react";
 import Starbucks from './component/starbucks/Starbucks';
 import KtAlpha from './component/kt-alpha/KtAlpha';

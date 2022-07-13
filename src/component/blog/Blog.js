@@ -25,7 +25,6 @@ const Blog = ({skill}) => {
             "Postman을 통한 API 활용",
             "React hook(useContext,useRef)",
             "MongoDB를 활용한 Database관리 , Schema",
-            "Bcrypt",
             "Heroku Deploy",
             "W3C 웹 표준 검사 완료",
         ],
