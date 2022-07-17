@@ -144,7 +144,7 @@ const Intro = () => {
                     <ul className={styles.desc}>
                         <li><span>Name:</span>김동녕</li>
                         <li><span>Birth:</span>1996.03.09</li>
-                        <li><span>Blog:</span><a href ="https://kdn0325.tistory.com" target="_blank" rel="noreferrer" title="Abel의 블로그 바로가기">Abel의 웹 개발 자습서</a></li>
+                        <li><span>Blog:</span><a href ="https://kdn0325.tistory.com" target="_blank" rel="noreferrer" title="Abel의 블로그 바로가기">Abel의 개발 자습서</a></li>
                         <li><span>Github:</span><a href ="https://github.com/kdn0325" target="_blank" rel="noreferrer" title="Abel의 github 바로가기">Abel의 Github</a></li>
                         <li><span>Phone:</span>010-5520-3071</li>
                         <li><span>Address:</span>경기도 수원시</li>

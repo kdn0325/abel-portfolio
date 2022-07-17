@@ -11,10 +11,12 @@
     opacity: 1;
     transition: opacity .5s;
   }
+  
   /* 애니메이션 종료 */
   .fade-exit {
     opacity: 1;
   }
+
   /* 애니메이션 종료 동작 */
   .fade-exit-active {
     opacity: 0;
